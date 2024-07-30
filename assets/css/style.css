@@ -10,6 +10,37 @@ body {
   padding: 0;
 }
 
+.sidebar-header {
+  width: 280px;
+  height: 100%;
+  background-color: #475E88;
+}
+
+.sidebar-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.main {
+  width: calc(100% - 280px);
+  background-color: #f4f9ff;
+}
+.main-container {
+  width: 100%;
+}
+.main-header {
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+}
+.main-inner {
+  width: 100%;
+  padding: 0 25px;
+}
+
 .login-page {
   width: 100%;
   height: 100vh;
@@ -109,7 +140,7 @@ body {
 }
 .login-page__form .toggle-password {
   position: absolute;
-  right: 0.5rem;
+  right: 18px;
   top: 50%;
   transform: translateY(-50%);
   background: none;
@@ -176,4 +207,10 @@ body {
   background: #475e88;
   border: none;
   outline: none;
+}
+
+.main-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
