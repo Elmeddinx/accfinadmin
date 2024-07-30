@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>ACCFIN - Admin Panel Login</title>
 </head>
+
 <body>
 
     <section class="login-page">
@@ -21,7 +23,10 @@
                             <input type="text" placeholder="Username" class="login-page__form-input">
                         </div>
                         <div class="login-page__form-group">
-                            <input type="text" placeholder="Password" class="login-page__form-input">
+                            <input type="password" placeholder="Password" id="passwordInput" class="login-page__form-input">
+                            <button type="button" class="toggle-password" onclick="togglePassword()">
+                                <img src="./assets/icons/eye-hide.png" alt="Show/Hide Password">
+                            </button>
                         </div>
                         <div class="login-page__form-group">
                             <input type="checkbox" id="loginPageCheckBox" class="login-page__form-checkbox">
@@ -39,4 +44,5 @@
 
     <script src="./assets/js/script.js"></script>
 </body>
+
 </html>

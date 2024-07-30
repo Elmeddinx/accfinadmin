@@ -83,6 +83,7 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
+  position: relative;
 }
 .login-page__form-input {
   width: 100%;
@@ -105,6 +106,20 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.login-page__form .toggle-password {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.login-page__form .toggle-password img {
+  width: 20px;
+  height: 20px;
+  transform: rotateX(180deg);
 }
 .login-page__form-checkbox {
   position: relative;
