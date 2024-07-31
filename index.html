@@ -13,6 +13,9 @@
     <div class="main-section">
         <header class="sidebar-header" id="sidebar">
             <div class="sidebar-container">
+                <div class="sidebar-close" id="sidebarClose">
+                    <img src="./assets/icons/close.png" alt="">
+                </div>
                 <div class="sidebar-logo">
                     <img src="./assets/img/logo.png" alt="">
                 </div>
@@ -90,6 +93,14 @@
                         </div>
                     </div>
                 </div>
+                <div class="sidebar-searchbar">
+                    <form class="sidebar-searchbar__input-group">
+                        <input type="text" class="sidebar-searchbar__input" placeholder="Axtar">
+                        <button class="sidebar-searchbar__search-icon">
+                            <img src="./assets/icons/search.png" alt="">
+                        </button>
+                    </form>
+                </div>
             </div>
         </header>
         <main class="main" id="main">
@@ -100,6 +111,37 @@
                             <div class="main-header__hamburger-item"></div>
                             <div class="main-header__hamburger-item"></div>
                             <div class="main-header__hamburger-item"></div>
+                        </div>
+                        <div class="main-header__searchbar">
+                            <form class="main-header__input-group">
+                                <input type="text" class="main-header__input" placeholder="Axtar">
+                                <button class="main-header__search-icon">
+                                    <img src="./assets/icons/search.png" alt="">
+                                </button>
+                            </form>
+                        </div>
+                        <div class="main-header__profile">
+                            <div class="main-header__profile-inner" id="profile">
+                                <div class="main-header__profile-photo">
+                                    <img src="./assets/img/profile.png" alt="">
+                                </div>
+                                <div class="main-header__profile-content">
+                                    <div class="main-header__profile-content__text">
+                                        <h4>Maria Steve</h4>
+                                        <span>Administrator</span>
+                                    </div>
+                                    <div class="main-header__profile-content__arrow">
+                                        <img src="./assets/icons/chevron.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-header__profile-dropdown" id="profileDropdown">
+                                <ul class="main-header__profile-items">
+                                    <li class="main-header__profile-item">
+                                        <a href="#">Çıxış</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>

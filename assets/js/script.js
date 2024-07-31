@@ -42,7 +42,11 @@ submenuItems.forEach(function (item) {
 });
 var hamburger = document.getElementById("hamburger");
 var sidebar = document.getElementById("sidebar");
+var sidebarClose = document.getElementById("sidebarClose");
 var mainArea = document.getElementById("main");
+var profile = document.getElementById("profile");
+var profileDropdown = document.getElementById("profileDropdown");
+
 hamburger.addEventListener("click", function () {
   sidebar.classList.toggle("show");
   mainArea.style.width = window.innerWidth - 280 + "px";
@@ -55,8 +59,17 @@ document.addEventListener("click", function (e) {
     sidebar.classList.remove("show");
     mainArea.style.width = "";
   }
+  if (!profile.contains(e.target) && !profileDropdown.contains(e.target)) {
+    profileDropdown.classList.remove("show");
+  }
 });
-
+sidebarClose.addEventListener("click", function () {
+  sidebar.classList.remove("show");
+  mainArea.style.width = "";
+})
+profile.addEventListener("click", function () {
+  profileDropdown.classList.toggle("show");
+});
 function openTab(tabName) {
   var i, tabContent, tabLinks;
   tabContent = document.getElementsByClassName("sidebar-submenu__content");
