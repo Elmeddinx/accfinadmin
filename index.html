@@ -1,28 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>ACCFIN - Admin Panel</title>
 </head>
+
 <body id="home-page">
-    
+
     <div class="main-section">
-        <header class="sidebar-header">
+        <header class="sidebar-header" id="sidebar">
             <div class="sidebar-container">
                 <div class="sidebar-logo">
                     <img src="./assets/img/logo.png" alt="">
                 </div>
                 <div class="sidebar-inner">
-                    
+                    <div class="sidebar-menu">
+                        <div class="sidebar-menu__item active" data-tab="crm">CRM</div>
+                        <div class="sidebar-menu__item" data-tab="task-manager">Task Manager</div>
+                        <div class="sidebar-menu__item" data-tab="structure">Structure</div>
+                    </div>
+                    <div class="sidebar-submenu">
+                        <div class="sidebar-submenu__content" id="crm">
+                            <div class="sidebar-submenu__inner">
+                                <div class="sidebar-submenu__header"><img src="./assets/icons/person.png" alt="">
+                                    Müştəri bazası</div>
+                                <ul class="sidebar-submenu__items">
+                                    <li class="sidebar-submenu__item active"><a href="#">Partnyorlar</a></li>
+                                    <li class="sidebar-submenu__item"><a href="#">Görüş planı</a></li>
+                                    <li class="sidebar-submenu__item"><a href="#">Görüş neticələri</a></li>
+                                    <li class="sidebar-submenu__item"><a href="#">VÖB</a></li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-submenu__inner">
+                                <div class="sidebar-submenu__header"><img src="./assets/icons/setting.png" alt=""
+                                        class="special-days">
+                                    Özəl günlər</div>
+                                <ul class="sidebar-submenu__items">
+                                    <li class="sidebar-submenu__item active"><a href="#">Bayramlar</a></li>
+                                    <li class="sidebar-submenu__item"><a href="#">Doğum günləri</a></li>
+                                    <li class="sidebar-submenu__item"><a href="#">Kampaniyalar</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sidebar-submenu__content" id="task-manager">
+                            <div class="sidebar-submenu__inner">
+                                <div class="sidebar-submenu__header"><img src="./assets/icons/question.png" alt=""
+                                        class="question-icon">
+                                    Sorgular</div>
+                                <ul class="sidebar-submenu__items">
+                                    <li class="sidebar-submenu__item active"><a href="#">Ödənişlər</a></li>
+                                    <li class="sidebar-submenu__item"><a href="#">Müqavilə</a></li>
+                                    <li class="sidebar-submenu__item"><a href="#">Görüşlərlə bağlı</a></li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-submenu__inner">
+                                <div class="sidebar-submenu__header"><img src="./assets/icons/tasks.png" alt=""
+                                        class="special-days">
+                                    Tapşırıqlar</div>
+                                <ul class="sidebar-submenu__items">
+                                    <li class="sidebar-submenu__item active"><a href="#">Tip 1</a></li>
+                                    <li class="sidebar-submenu__item"><a href="#">Tip 2</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sidebar-submenu__content" id="structure">
+                            <div class="sidebar-submenu__inner">
+                                <div class="sidebar-submenu__header"><img src="./assets/icons/person.png" alt="">
+                                    Müştəri bazası</div>
+                                <ul class="sidebar-submenu__items">
+                                    <li class="sidebar-submenu__item active"><a href="#">Partnyorlar</a></li>
+                                    <li class="sidebar-submenu__item"><a href="#">Görüş planı</a></li>
+                                    <li class="sidebar-submenu__item"><a href="#">Görüş neticələri</a></li>
+                                    <li class="sidebar-submenu__item"><a href="#">VÖB</a></li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-submenu__inner">
+                                <div class="sidebar-submenu__header"><img src="./assets/icons/setting.png" alt=""
+                                        class="special-days">
+                                    Özəl günlər</div>
+                                <ul class="sidebar-submenu__items">
+                                    <li class="sidebar-submenu__item active"><a href="#">Bayramlar</a></li>
+                                    <li class="sidebar-submenu__item"><a href="#">Doğum günləri</a></li>
+                                    <li class="sidebar-submenu__item"><a href="#">Kampaniyalar</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
-        <main class="main">
+        <main class="main" id="main">
             <div class="main-container">
                 <div class="main-header">
-
+                    <div class="main-header__inner">
+                        <div class="main-header__hamburger" id="hamburger">
+                            <div class="main-header__hamburger-item"></div>
+                            <div class="main-header__hamburger-item"></div>
+                            <div class="main-header__hamburger-item"></div>
+                        </div>
+                    </div>
                 </div>
                 <div class="main-inner">
 
@@ -35,4 +114,5 @@
 
     <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
