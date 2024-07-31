@@ -13,6 +13,7 @@ body {
 .sidebar-header {
   width: 280px;
   height: auto;
+  min-height: 100vh;
   background-color: #475e88;
 }
 @media only screen and (max-width: 768px) {
