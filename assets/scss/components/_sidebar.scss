@@ -3,6 +3,8 @@
     height: auto;
     min-height: 100vh;
     background-color: #475e88;
+    position: sticky;
+    top: 0;
     @include mq(tablet-portrait-up) {
         display: none;
         opacity: 0;
@@ -48,6 +50,14 @@
     }
     @include mq (phone-only-down) {
         display: none;
+    }
+}
+.sidebar-logo {
+    width: 148px;
+    img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
     }
 }
 .sidebar-inner {
