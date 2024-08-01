@@ -5,11 +5,12 @@
     background-color: #475e88;
     position: sticky;
     top: 0;
-    @include mq(tablet-portrait-up) {
+    @include mq(desktop-up) {
         display: none;
         opacity: 0;
-        position: relative;
+        position: fixed;
         left: -100%;
+        z-index: 666;
     }
 
     &.show {
@@ -19,8 +20,7 @@
         opacity: 1;
         @include mq(phone-only) {
             width: 100%;
-            position: absolute;
-            z-index: 555;
+            position: fixed;
         }
     }
     @keyframes show-sidebar {
@@ -48,7 +48,7 @@
         width: 15px;
         height: 15px;
     }
-    @include mq (phone-only-down) {
+    @include mq (desktop-down) {
         display: none;
     }
 }

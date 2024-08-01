@@ -20,7 +20,7 @@
         row-gap: 5px;
         cursor: pointer;
 
-        @include mq(tablet-portrait-down) {
+        @include mq(desktop-down) {
             display: none;
         }
         &-item {

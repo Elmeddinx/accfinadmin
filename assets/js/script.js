@@ -48,15 +48,10 @@ if (document.body.id == "login-page") {
 
   hamburger.addEventListener("click", function () {
     sidebar.classList.toggle("show");
-    mainArea.style.width = window.innerWidth - 280 + "px";
-    if (!sidebar.classList.contains("show")) {
-      mainArea.style.width = "";
-    }
   });
   document.addEventListener("click", function (e) {
     if (!sidebar.contains(e.target) && !hamburger.contains(e.target)) {
       sidebar.classList.remove("show");
-      mainArea.style.width = "";
     }
     if (!profile.contains(e.target) && !profileDropdown.contains(e.target)) {
       profileDropdown.classList.remove("show");
@@ -64,7 +59,6 @@ if (document.body.id == "login-page") {
   });
   sidebarClose.addEventListener("click", function () {
     sidebar.classList.remove("show");
-    mainArea.style.width = "";
   });
   profile.addEventListener("click", function () {
     profileDropdown.classList.toggle("show");
@@ -82,4 +76,31 @@ if (document.body.id == "login-page") {
     document.getElementById(tabName).style.display = "flex";
     document.querySelector(`[data-tab="${tabName}"]`).className += " active";
   }
+  var swiper = new Swiper(".employeesSwiper", {
+    slidesPerView: 12,
+    spaceBetween: 16,
+    breakpoints: {
+      320: {
+        slidesPerView: 2.5
+      },
+      400: {
+        slidesPerView: 3.8
+      },
+      500: {
+        slidesPerView: 5
+      },
+      650: {
+        slidesPerView: 7
+      },
+      800: {
+        slidesPerView: 8
+      },
+      1000: {
+        slidesPerView: 10
+      },
+      1440: {
+        slidesPerView: 12
+      }
+    }
+  });
 }
