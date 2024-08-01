@@ -37,6 +37,9 @@
     align-items: center;
     padding: 40px 0;
     position: relative;
+    @include mq(tablet-portrait-up) {
+        padding: 20px 0;
+    }
 }
 .sidebar-close {
     position: absolute;
@@ -150,6 +153,9 @@
     margin-top: 30px;
     @include mq(tablet-portrait-down) {
         display: none;
+    }
+    @include mq(tablet-portrait-up) {
+        margin-top: 0;
     }
     &__input-group {
         width: 100%;

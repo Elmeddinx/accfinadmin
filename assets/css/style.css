@@ -54,6 +54,11 @@ body {
   padding: 40px 0;
   position: relative;
 }
+@media only screen and (max-width: 768px) {
+  .sidebar-container {
+    padding: 20px 0;
+  }
+}
 
 .sidebar-close {
   position: absolute;
@@ -176,6 +181,11 @@ body {
 @media only screen and (min-width: 768px) {
   .sidebar-searchbar {
     display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .sidebar-searchbar {
+    margin-top: 0;
   }
 }
 .sidebar-searchbar__input-group {
