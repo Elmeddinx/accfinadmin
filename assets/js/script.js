@@ -42,7 +42,6 @@ if (document.body.id == "login-page") {
   var hamburger = document.getElementById("hamburger");
   var sidebar = document.getElementById("sidebar");
   var sidebarClose = document.getElementById("sidebarClose");
-  var mainArea = document.getElementById("main");
   var profile = document.getElementById("profile");
   var profileDropdown = document.getElementById("profileDropdown");
 
@@ -81,26 +80,30 @@ if (document.body.id == "login-page") {
     spaceBetween: 16,
     breakpoints: {
       320: {
-        slidesPerView: 2.5
+        slidesPerView: 2.5,
       },
       400: {
-        slidesPerView: 3.8
+        slidesPerView: 3.8,
       },
       500: {
-        slidesPerView: 5
+        slidesPerView: 5,
       },
       650: {
-        slidesPerView: 7
+        slidesPerView: 7,
       },
       800: {
-        slidesPerView: 8
+        slidesPerView: 8,
       },
       1000: {
-        slidesPerView: 10
+        slidesPerView: 10,
       },
       1440: {
-        slidesPerView: 12
-      }
-    }
+        slidesPerView: 12,
+      },
+    },
   });
 }
+document.getElementById("select-all").addEventListener("change", function (e) {
+  const checkboxes = document.querySelectorAll('tbody input[type="checkbox"]');
+  checkboxes.forEach((checkbox) => (checkbox.checked = e.target.checked));
+});

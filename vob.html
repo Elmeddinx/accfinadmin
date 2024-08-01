@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>ACCFIN - Admin Panel VÖB</title>
+</head>
+
+<body id="home-page">
+
+    <div class="main-section">
+        <header class="sidebar-header" id="sidebar">
+            <div class="sidebar-container">
+                <div class="sidebar-close" id="sidebarClose">
+                    <img src="./assets/icons/close.png" alt="">
+                </div>
+                <div class="sidebar-logo">
+                    <img src="./assets/img/logo.png" alt="">
+                </div>
+                <div class="sidebar-searchbar">
+                    <form class="sidebar-searchbar__input-group">
+                        <input type="text" class="sidebar-searchbar__input" placeholder="Axtar">
+                        <button class="sidebar-searchbar__search-icon">
+                            <img src="./assets/icons/search.png" alt="">
+                        </button>
+                    </form>
+                </div>
+                <div class="sidebar-inner">
+                    <div class="sidebar-menu">
+                        <div class="sidebar-menu__item active" data-tab="crm">CRM</div>
+                        <div class="sidebar-menu__item" data-tab="task-manager">Task Manager</div>
+                        <div class="sidebar-menu__item" data-tab="structure">Structure</div>
+                    </div>
+                    <div class="sidebar-submenu">
+                        <div class="sidebar-submenu__content" id="crm">
+                            <div class="sidebar-submenu__inner">
+                                <div class="sidebar-submenu__header"><img src="./assets/icons/person.png" alt="">
+                                    Müştəri bazası</div>
+                                <ul class="sidebar-submenu__items">
+                                    <li class="sidebar-submenu__item"><a href="#">Partnyorlar</a></li>
+                                    <li class="sidebar-submenu__item"><a href="#">Görüş planı</a></li>
+                                    <li class="sidebar-submenu__item"><a href="#">Görüş neticələri</a></li>
+                                    <li class="sidebar-submenu__item active"><a href="./vob.html">VÖB</a></li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-submenu__inner">
+                                <div class="sidebar-submenu__header"><img src="./assets/icons/setting.png" alt=""
+                                        class="special-days">
+                                    Özəl günlər</div>
+                                <ul class="sidebar-submenu__items">
+                                    <li class="sidebar-submenu__item active"><a href="#">Bayramlar</a></li>
+                                    <li class="sidebar-submenu__item"><a href="#">Doğum günləri</a></li>
+                                    <li class="sidebar-submenu__item"><a href="#">Kampaniyalar</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sidebar-submenu__content" id="task-manager">
+                            <div class="sidebar-submenu__inner">
+                                <div class="sidebar-submenu__header"><img src="./assets/icons/question.png" alt=""
+                                        class="question-icon">
+                                    Sorgular</div>
+                                <ul class="sidebar-submenu__items">
+                                    <li class="sidebar-submenu__item active"><a href="#">Ödənişlər</a></li>
+                                    <li class="sidebar-submenu__item"><a href="#">Müqavilə</a></li>
+                                    <li class="sidebar-submenu__item"><a href="#">Görüşlərlə bağlı</a></li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-submenu__inner">
+                                <div class="sidebar-submenu__header"><img src="./assets/icons/tasks.png" alt=""
+                                        class="special-days">
+                                    Tapşırıqlar</div>
+                                <ul class="sidebar-submenu__items">
+                                    <li class="sidebar-submenu__item active"><a href="#">Tip 1</a></li>
+                                    <li class="sidebar-submenu__item"><a href="#">Tip 2</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sidebar-submenu__content" id="structure">
+                            <div class="sidebar-submenu__inner">
+                                <div class="sidebar-submenu__header"><img src="./assets/icons/person.png" alt="">
+                                    Müştəri bazası</div>
+                                <ul class="sidebar-submenu__items">
+                                    <li class="sidebar-submenu__item active"><a href="#">Partnyorlar</a></li>
+                                    <li class="sidebar-submenu__item"><a href="#">Görüş planı</a></li>
+                                    <li class="sidebar-submenu__item"><a href="#">Görüş neticələri</a></li>
+                                    <li class="sidebar-submenu__item"><a href="#">VÖB</a></li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-submenu__inner">
+                                <div class="sidebar-submenu__header"><img src="./assets/icons/setting.png" alt=""
+                                        class="special-days">
+                                    Özəl günlər</div>
+                                <ul class="sidebar-submenu__items">
+                                    <li class="sidebar-submenu__item active"><a href="#">Bayramlar</a></li>
+                                    <li class="sidebar-submenu__item"><a href="#">Doğum günləri</a></li>
+                                    <li class="sidebar-submenu__item"><a href="#">Kampaniyalar</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main" id="vob-page-main">
+            <div class="main-container">
+                <div class="main-header">
+                    <div class="main-header__inner">
+                        <div class="main-header__hamburger" id="hamburger">
+                            <div class="main-header__hamburger-item"></div>
+                            <div class="main-header__hamburger-item"></div>
+                            <div class="main-header__hamburger-item"></div>
+                        </div>
+                        <div class="main-header__searchbar">
+                            <form class="main-header__input-group">
+                                <input type="text" class="main-header__input" placeholder="Axtar">
+                                <button class="main-header__search-icon">
+                                    <img src="./assets/icons/search.png" alt="">
+                                </button>
+                            </form>
+                        </div>
+                        <div class="main-header__profile">
+                            <div class="main-header__profile-inner" id="profile">
+                                <div class="main-header__profile-photo">
+                                    <img src="./assets/img/profile.png" alt="">
+                                </div>
+                                <div class="main-header__profile-content">
+                                    <div class="main-header__profile-content__text">
+                                        <h4>Maria Steve</h4>
+                                        <span>Administrator</span>
+                                    </div>
+                                    <div class="main-header__profile-content__arrow">
+                                        <img src="./assets/icons/chevron.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-header__profile-dropdown" id="profileDropdown">
+                                <ul class="main-header__profile-items">
+                                    <li class="main-header__profile-item">
+                                        <a href="#">Çıxış</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-inner">
+                    <div class="main-inner__container">
+                        <div class="main-inner__row breadcrumb-row">
+                            <div class="main-inner__bccont">
+                                <h1>VÖB</h1>
+                                <div class="main-inner__breadcrumb">
+                                    <span>Müştəri bazası</span>
+                                    <span>/</span>
+                                    <span class="active">VÖB</span>
+                                </div>
+                            </div>
+                            <div class="main-inner__btn">
+                                <div class="main-inner__btngroup">
+                                    <button class="main-inner__btn-fill">
+                                        <img src="./assets/icons/upload.png" alt="">
+                                        İmport
+                                    </button>
+                                    <button class="main-inner__btn-stroke">+ Əlavə et</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-inner__row">
+                            <div class="table-container">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th><input type="checkbox" id="select-all"></th>
+                                            <th>Hamsını seç</th>
+                                            <th><img src="./assets/icons/trash.png" alt="">Sil</th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th>Filterlə <img src="./assets/icons/filter.png" alt=""> <img src="./assets/icons/chevron.png" alt=""></th>
+                                        </tr>
+                                    </thead>
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>NO</th>
+                                            <th>Hüquqi adı</th>
+                                            <th>VÖENi</th>
+                                            <th>Fəaliyyət sahəsi</th>
+                                            <th>Şəhər</th>
+                                            <th>Mükəlləfiyyət</th>
+                                            <th>Referans</th>
+                                            <th></th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- Örnek Satırlar -->
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>1</td>
+                                            <td>Accfin Group</td>
+                                            <td>#242332228</td>
+                                            <td>Xidmət</td>
+                                            <td>Bakı</td>
+                                            <td>ƏDV</td>
+                                            <td>Adil Hamidov</td>
+                                            <td><button class="plan-btn">Görüş Planla</button></td>
+                                            <td><img src="./assets/icons/eye.png" alt=""><img src="./assets/icons/dots-horizontal.png" alt=""></td>
+                                        </tr>
+                                        <!-- Diğer satırları buraya ekleyin -->
+                                    </tbody>
+                                </table>
+                                <div class="pagination">
+                                    <span>Previous</span>
+                                    <span>226-235 of 235</span>
+                                    <span>Next</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

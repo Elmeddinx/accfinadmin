@@ -1,0 +1,96 @@
+.main-inner {
+    &__container {
+        width: 100%;
+        padding: 40px 50px;
+        @include mq(tablet-landscape-up) {
+            padding: 40px 25px;
+        }
+    }
+    &__breadcrumb {
+        span {
+            color: #6c757d;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            &.active {
+                color: #212529;
+            }
+        }
+    }
+    .breadcrumb-row {
+        display: flex;
+        flex-direction: row !important;
+        align-items: flex-end;
+        justify-content: space-between;
+        column-gap: 24px;
+        @include mq(tablet-landscape-up) {
+            flex-direction: row;
+            row-gap: 30px;
+        }
+        h1 {
+            color: #2d3b54;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 72px;
+        }
+    }
+    &__btn {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        
+        @include mq(tablet-portrait-up) {
+            flex-direction: column;
+            row-gap: 30px;
+        }
+        &-fill {
+            width: 106.474px;
+            height: 33.149px;
+            background-color: #475e88;
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            cursor: pointer;
+            outline: none;
+            img {
+                width: 12px;
+                height: 12px;
+                margin-right: 4px;
+            }
+        }
+        &-stroke {
+            width: 106.474px;
+            height: 33.149px;
+            border-radius: 8px;
+            border: 1px solid #475e88;
+            background-color: transparent;
+            color: #475e88;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            cursor: pointer;
+            outline: none;
+            &:hover {
+                background-color: #475e88;
+                color: #fff;
+                transition: all 0.25s;
+            }
+        }
+    }
+    &__btngroup {
+        display: flex;
+        column-gap: 10px;
+        
+        @include mq(tablet-portrait-up) {
+            flex-direction: column;
+            row-gap: 10px;
+        }
+    }
+}
