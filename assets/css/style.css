@@ -538,7 +538,7 @@ body {
 }
 .table-container__inner table {
   width: 100%;
-  min-width: 1026px;
+  min-width: 1038px;
   border-collapse: collapse;
 }
 .table-container__inner table thead:nth-child(1) th {
@@ -646,6 +646,7 @@ body {
 .blue-btn {
   display: inline-flex;
   height: 24px;
+  min-width: 90px;
   padding: 0px 8px;
   justify-content: center;
   align-items: center;
@@ -665,6 +666,7 @@ body {
 .green-btn {
   display: inline-flex;
   height: 24px;
+  min-width: 90px;
   padding: 0px 8px;
   justify-content: center;
   align-items: center;
