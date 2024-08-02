@@ -169,56 +169,221 @@
                         </div>
                         <div class="main-inner__row">
                             <div class="table-container">
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th><input type="checkbox" id="select-all"></th>
-                                            <th>Hamsını seç</th>
-                                            <th><img src="./assets/icons/trash.png" alt="">Sil</th>
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
-                                            <th>Filterlə <img src="./assets/icons/filter.png" alt=""> <img src="./assets/icons/chevron.png" alt=""></th>
-                                        </tr>
-                                    </thead>
-                                    <thead>
-                                        <tr>
-                                            <th></th>
-                                            <th>NO</th>
-                                            <th>Hüquqi adı</th>
-                                            <th>VÖENi</th>
-                                            <th>Fəaliyyət sahəsi</th>
-                                            <th>Şəhər</th>
-                                            <th>Mükəlləfiyyət</th>
-                                            <th>Referans</th>
-                                            <th></th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <!-- Örnek Satırlar -->
-                                        <tr>
-                                            <td><input type="checkbox"></td>
-                                            <td>1</td>
-                                            <td>Accfin Group</td>
-                                            <td>#242332228</td>
-                                            <td>Xidmət</td>
-                                            <td>Bakı</td>
-                                            <td>ƏDV</td>
-                                            <td>Adil Hamidov</td>
-                                            <td><button class="plan-btn">Görüş Planla</button></td>
-                                            <td><img src="./assets/icons/eye.png" alt=""><img src="./assets/icons/dots-horizontal.png" alt=""></td>
-                                        </tr>
-                                        <!-- Diğer satırları buraya ekleyin -->
-                                    </tbody>
-                                </table>
-                                <div class="pagination">
-                                    <span>Previous</span>
+                                <div class="table-container__inner">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th><input type="checkbox" id="select-all"></th>
+                                                <th><label for="select-all">Hamsını seç</label></th>
+                                                <th class="deleteBtn">
+                                                    <div class="table-cell-inner deleteBtn"><img
+                                                            src="./assets/icons/trash.png" alt="">Sil</div>
+                                                </th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th>
+                                                    <div class="table-cell-inner">Filterlə
+                                                        <img class="table-cell-inner__filter"
+                                                            src="./assets/icons/filter.png" alt="">
+                                                        <img class="table-cell-inner__chevron"
+                                                            src="./assets/icons/chevron2.png" alt="">
+                                                    </div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>NO</th>
+                                                <th>Hüquqi adı</th>
+                                                <th>VÖENi</th>
+                                                <th>Fəaliyyət sahəsi</th>
+                                                <th>Şəhər</th>
+                                                <th>Mükəlləfiyyət</th>
+                                                <th>Referans</th>
+                                                <th></th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input type="checkbox"></td>
+                                                <td>1</td>
+                                                <td>Accfin Group</td>
+                                                <td>#242332228</td>
+                                                <td>Xidmət</td>
+                                                <td>Bakı</td>
+                                                <td>ƏDV</td>
+                                                <td>
+                                                    <label class="table-switch">
+                                                        <input type="checkbox">
+                                                        <span class="slider"></span>
+                                                    </label>
+                                                </td>
+                                                <td><button class="green-btn">Görüş Planla</button></td>
+                                                <td>
+                                                    <div class="table-cell-inner">
+                                                        <img src="./assets/icons/eye.png" alt="" class="showHideBtn">
+                                                        <img src="./assets/icons/dots-horizontal.png" alt=""
+                                                            class="optionsBtn">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox"></td>
+                                                <td>1</td>
+                                                <td>Accfin Group</td>
+                                                <td>#242332228</td>
+                                                <td>Xidmət</td>
+                                                <td>Bakı</td>
+                                                <td>ƏDV</td>
+                                                <td>Adil Hamidov</td>
+                                                <td><button class="blue-btn">Görüş Planla</button></td>
+                                                <td>
+                                                    <div class="table-cell-inner">
+                                                        <img src="./assets/icons/eye.png" alt="" class="showHideBtn">
+                                                        <img src="./assets/icons/dots-horizontal.png" alt=""
+                                                            class="optionsBtn">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox"></td>
+                                                <td>1</td>
+                                                <td>Accfin Group</td>
+                                                <td>#242332228</td>
+                                                <td>Xidmət</td>
+                                                <td>Bakı</td>
+                                                <td>ƏDV</td>
+                                                <td>Adil Hamidov</td>
+                                                <td><button class="blue-btn">Görüş Planla</button></td>
+                                                <td>
+                                                    <div class="table-cell-inner">
+                                                        <img src="./assets/icons/eye.png" alt="" class="showHideBtn">
+                                                        <img src="./assets/icons/dots-horizontal.png" alt=""
+                                                            class="optionsBtn">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox"></td>
+                                                <td>1</td>
+                                                <td>Accfin Group</td>
+                                                <td>#242332228</td>
+                                                <td>Xidmət</td>
+                                                <td>Bakı</td>
+                                                <td>ƏDV</td>
+                                                <td>Adil Hamidov</td>
+                                                <td><button class="blue-btn">Görüş Planla</button></td>
+                                                <td>
+                                                    <div class="table-cell-inner">
+                                                        <img src="./assets/icons/eye.png" alt="" class="showHideBtn">
+                                                        <img src="./assets/icons/dots-horizontal.png" alt=""
+                                                            class="optionsBtn">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox"></td>
+                                                <td>1</td>
+                                                <td>Accfin Group</td>
+                                                <td>#242332228</td>
+                                                <td>Xidmət</td>
+                                                <td>Bakı</td>
+                                                <td>ƏDV</td>
+                                                <td>Adil Hamidov</td>
+                                                <td><button class="blue-btn">Görüş Planla</button></td>
+                                                <td>
+                                                    <div class="table-cell-inner">
+                                                        <img src="./assets/icons/eye.png" alt="" class="showHideBtn">
+                                                        <img src="./assets/icons/dots-horizontal.png" alt=""
+                                                            class="optionsBtn">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox"></td>
+                                                <td>1</td>
+                                                <td>Accfin Group</td>
+                                                <td>#242332228</td>
+                                                <td>Xidmət</td>
+                                                <td>Bakı</td>
+                                                <td>ƏDV</td>
+                                                <td>Adil Hamidov</td>
+                                                <td><button class="blue-btn">Görüş Planla</button></td>
+                                                <td>
+                                                    <div class="table-cell-inner">
+                                                        <img src="./assets/icons/eye.png" alt="" class="showHideBtn">
+                                                        <img src="./assets/icons/dots-horizontal.png" alt=""
+                                                            class="optionsBtn">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox"></td>
+                                                <td>1</td>
+                                                <td>Accfin Group</td>
+                                                <td>#242332228</td>
+                                                <td>Xidmət</td>
+                                                <td>Bakı</td>
+                                                <td>ƏDV</td>
+                                                <td>Adil Hamidov</td>
+                                                <td><button class="blue-btn">Görüş Planla</button></td>
+                                                <td>
+                                                    <div class="table-cell-inner">
+                                                        <img src="./assets/icons/eye.png" alt="" class="showHideBtn">
+                                                        <img src="./assets/icons/dots-horizontal.png" alt=""
+                                                            class="optionsBtn">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox"></td>
+                                                <td>1</td>
+                                                <td>Accfin Group</td>
+                                                <td>#242332228</td>
+                                                <td>Xidmət</td>
+                                                <td>Bakı</td>
+                                                <td>ƏDV</td>
+                                                <td>Adil Hamidov</td>
+                                                <td><button class="blue-btn">Görüş Planla</button></td>
+                                                <td>
+                                                    <div class="table-cell-inner">
+                                                        <img src="./assets/icons/eye.png" alt="" class="showHideBtn">
+                                                        <img src="./assets/icons/dots-horizontal.png" alt=""
+                                                            class="optionsBtn">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox"></td>
+                                                <td>1</td>
+                                                <td>Accfin Group</td>
+                                                <td>#242332228</td>
+                                                <td>Xidmət</td>
+                                                <td>Bakı</td>
+                                                <td>ƏDV</td>
+                                                <td>Adil Hamidov</td>
+                                                <td><button class="blue-btn">Görüş Planla</button></td>
+                                                <td>
+                                                    <div class="table-cell-inner">
+                                                        <img src="./assets/icons/eye.png" alt="" class="showHideBtn">
+                                                        <img src="./assets/icons/dots-horizontal.png" alt=""
+                                                            class="optionsBtn">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="table-pagination">
+                                    <a href="#">Previous</a>
                                     <span>226-235 of 235</span>
-                                    <span>Next</span>
+                                    <a href="#" class="active">Next</a>
                                 </div>
                             </div>
                         </div>

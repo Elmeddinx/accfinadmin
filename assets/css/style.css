@@ -527,6 +527,200 @@ body {
   padding: 0 24px;
 }
 
+.table-container {
+  width: 100%;
+  margin-top: 50px;
+  background-color: #fff;
+}
+.table-container__inner {
+  width: 100%;
+  overflow-x: auto;
+}
+.table-container__inner table {
+  width: 100%;
+  min-width: 1026px;
+  border-collapse: collapse;
+}
+.table-container__inner table thead:nth-child(1) th {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  border-bottom: 1px solid #e2e8f0;
+}
+.table-container__inner table thead:nth-child(2) th {
+  background-color: #f8fafc;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 20px;
+}
+.table-container__inner table td:last-child {
+  text-align: right;
+}
+.table-container__inner table th,
+.table-container__inner table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #f1f5f9;
+  color: #64748b;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.table-container__inner table th:first-child, .table-container__inner table th:last-child,
+.table-container__inner table td:first-child,
+.table-container__inner table td:last-child {
+  padding: 13px 20px;
+}
+.table-container__inner table th .table-cell-inner,
+.table-container__inner table td .table-cell-inner {
+  display: flex;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.table-container__inner table th .table-cell-inner img,
+.table-container__inner table td .table-cell-inner img {
+  margin-right: 5px;
+}
+.table-container__inner table th .table-cell-inner__filter,
+.table-container__inner table td .table-cell-inner__filter {
+  margin-left: 8px;
+  cursor: pointer;
+}
+.table-container__inner table th .table-cell-inner__chevron,
+.table-container__inner table td .table-cell-inner__chevron {
+  width: 10px;
+  height: 6px;
+  cursor: pointer;
+  margin-right: 0 !important;
+}
+.table-container__inner table th .table-cell-inner.deleteBtn,
+.table-container__inner table td .table-cell-inner.deleteBtn {
+  cursor: pointer;
+}
+.table-container__inner table th .table-cell-inner .showHideBtn,
+.table-container__inner table td .table-cell-inner .showHideBtn {
+  cursor: pointer;
+}
+.table-container__inner table th .table-cell-inner .optionsBtn,
+.table-container__inner table td .table-cell-inner .optionsBtn {
+  cursor: pointer;
+}
+.table-container__inner table input[type=checkbox] {
+  margin: 0;
+}
+.table-container__inner table img {
+  width: 24px;
+  height: 24px;
+}
+.table-container .table-pagination {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+}
+.table-container .table-pagination a {
+  text-decoration: none;
+  color: #cbd5e1;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 18px;
+}
+.table-container .table-pagination a.active {
+  color: #00aaff;
+  cursor: pointer;
+}
+.table-container .table-pagination span {
+  color: #64748b;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.blue-btn {
+  display: inline-flex;
+  height: 24px;
+  padding: 0px 8px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 999px;
+  background: #e0f2fe;
+  border: none;
+  color: #0ea5e9;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.green-btn {
+  display: inline-flex;
+  height: 24px;
+  padding: 0px 8px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 999px;
+  background: rgba(86, 186, 40, 0.2);
+  border: none;
+  color: #56ba28;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.table-switch {
+  position: relative;
+  display: inline-block;
+  width: 32px;
+  height: 18px;
+}
+.table-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.table-switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #D0CFCF;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+.table-switch .slider::before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+.table-switch input:checked + .slider {
+  background-color: #4E7DDA;
+}
+.table-switch input:checked + .slider:before {
+  transform: translateX(14px);
+}
+
 .login-page {
   width: 100%;
   height: 100vh;
@@ -940,70 +1134,4 @@ body {
   right: 0;
   border-radius: 50%;
   background-color: #56ba28;
-}
-
-#vob-page-main .main-inner__row .table-container {
-  width: 100%;
-  overflow-x: auto;
-  margin-top: 50px;
-  background-color: #fff;
-}
-#vob-page-main .main-inner__row table {
-  width: 100%;
-  border-collapse: collapse;
-}
-#vob-page-main .main-inner__row table thead:nth-child(1) th {
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 18px;
-}
-#vob-page-main .main-inner__row table thead:nth-child(2) th {
-  background-color: #f1f5f9;
-  font-weight: 800;
-  font-size: 12px;
-  line-height: 20px;
-}
-#vob-page-main .main-inner__row table th,
-#vob-page-main .main-inner__row table td {
-  padding: 12px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
-  color: #64748b;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-}
-#vob-page-main .main-inner__row table th:first-child, #vob-page-main .main-inner__row table th:last-child,
-#vob-page-main .main-inner__row table td:first-child,
-#vob-page-main .main-inner__row table td:last-child {
-  padding: 13px 20px;
-}
-#vob-page-main .main-inner__row table input[type=checkbox] {
-  margin: 0;
-}
-#vob-page-main .main-inner__row table .plan-btn {
-  background-color: #00aaff;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  cursor: pointer;
-}
-#vob-page-main .main-inner__row table .plan-btn:hover {
-  background-color: #007acc;
-}
-#vob-page-main .main-inner__row table img {
-  width: 24px;
-  height: 24px;
-}
-#vob-page-main .main-inner__row .pagination {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 0;
-  border-top: 1px solid #ddd;
-  margin-top: 20px;
-}
-#vob-page-main .main-inner__row .pagination span {
-  cursor: pointer;
-  color: #00aaff;
 }/*# sourceMappingURL=style.css.map */

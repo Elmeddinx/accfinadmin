@@ -1,0 +1,115 @@
+.table-container {
+    width: 100%;
+    margin-top: 50px;
+    background-color: #fff;
+    &__inner {
+        width: 100%;
+        overflow-x: auto;
+        table {
+            width: 100%;
+            min-width: 1026px;
+            border-collapse: collapse;
+            thead {
+                &:nth-child(1) {
+                    th {
+                        font-weight: 700;
+                        font-size: 15px;
+                        line-height: 18px;
+                        border-bottom: 1px solid #e2e8f0;
+                    }
+                }
+                &:nth-child(2) {
+                    th {
+                        background-color: #f8fafc;
+                        font-weight: 800;
+                        font-size: 12px;
+                        line-height: 20px;
+                    }
+                }
+            }
+            td {
+                &:last-child {
+                    text-align: right;
+                }
+            }
+            th,
+            td {
+                &:first-child,
+                &:last-child {
+                    padding: 13px 20px;
+                }
+                padding: 12px;
+                text-align: left;
+                border-bottom: 1px solid #f1f5f9;
+                color: #64748b;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+                .table-cell-inner {
+                    display: flex;
+                    align-items: center;
+                    width: fit-content;
+                    img {
+                        margin-right: 5px;
+                    }
+                    &__filter {
+                        margin-left: 8px;
+                        cursor: pointer;
+                    }
+                    &__chevron {
+                        width: 10px;
+                        height: 6px;
+                        cursor: pointer;
+                        margin-right: 0 !important;
+                    }
+                    &.deleteBtn {
+                        cursor: pointer;
+                    }
+                    .showHideBtn {
+                        cursor: pointer;
+                    }
+                    .optionsBtn {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            input[type="checkbox"] {
+                margin: 0;
+            }
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+    .table-pagination {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px;
+        border-top: 1px solid #ddd;
+        margin-top: 20px;
+        a {
+            text-decoration: none;
+            color: #cbd5e1;
+            text-align: center;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 18px;
+            &.active {
+                color: #00aaff;
+                cursor: pointer;
+            }
+        }
+        span {
+            color: #64748b;
+            text-align: center;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 18px;
+        }
+    }
+}
