@@ -163,7 +163,7 @@
                                         <img src="./assets/icons/upload.png" alt="">
                                         İmport
                                     </button>
-                                    <button class="main-inner__btn-stroke">+ Əlavə et</button>
+                                    <button class="main-inner__btn-stroke" id="addBtn">+ Əlavə et</button>
                                 </div>
                             </div>
                         </div>
@@ -220,7 +220,7 @@
                                                 <td>ƏDV</td>
                                                 <td>
                                                     <label class="table-switch">
-                                                        <input type="checkbox">
+                                                        <input type="checkbox" class="switch-checkbox">
                                                         <span class="slider"></span>
                                                     </label>
                                                 </td>
@@ -394,6 +394,38 @@
     </div>
 
 
+    <div class="modal" id="modal">
+        <div class="modal-container">
+            <div class="modal-inner " id="modalInner">
+                <div class="modal-header">
+                    <h4>Əlavə et</h4>
+                </div>
+                <div class="modal-form">
+                    <form action="" class="modal-form__add">
+                        <div class="modal-form__group">
+                            <label>Kampaniya adı</label>
+                            <input type="text" class="modal-input">
+                        </div>
+                        <div class="modal-form__group">
+                            <label>Tarixi</label>
+                            <input type="date" class="modal-input">
+                        </div>
+                        <div class="modal-form__group modal-form__textarea">
+                            <label>Kampaniya mətni</label>
+                            <textarea type="text" class="modal-input"></textarea>
+                        </div>
+                        <div class="modal-form__group modal-form__btn">
+                            <button class="modal-btn">Əlavə et</button>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-close" id="modalClose">
+                    <img src="./assets/icons/modal-close.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>

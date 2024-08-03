@@ -37,6 +37,9 @@
                 &:first-child,
                 &:last-child {
                     padding: 13px 20px;
+                    .table-cell-inner {
+                        justify-content: flex-end;
+                    }
                 }
                 padding: 12px;
                 text-align: left;
@@ -49,7 +52,6 @@
                 .table-cell-inner {
                     display: flex;
                     align-items: center;
-                    width: fit-content;
                     img {
                         margin-right: 5px;
                     }

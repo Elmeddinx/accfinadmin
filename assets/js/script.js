@@ -44,6 +44,10 @@ if (document.body.id == "login-page") {
   var sidebarClose = document.getElementById("sidebarClose");
   var profile = document.getElementById("profile");
   var profileDropdown = document.getElementById("profileDropdown");
+  var addBtn = document.getElementById("addBtn");
+  var modal = document.getElementById("modal");
+  var modalInner = document.getElementById("modalInner");
+  var modalClose = document.getElementById("modalClose");
 
   hamburger.addEventListener("click", function () {
     sidebar.classList.toggle("show");
@@ -54,6 +58,9 @@ if (document.body.id == "login-page") {
     }
     if (!profile.contains(e.target) && !profileDropdown.contains(e.target)) {
       profileDropdown.classList.remove("show");
+    }
+    if (!modalInner.contains(e.target) && !addBtn.contains(e.target)) {
+      modal.classList.remove("show");
     }
   });
   sidebarClose.addEventListener("click", function () {
@@ -103,7 +110,21 @@ if (document.body.id == "login-page") {
     },
   });
 }
-document.getElementById("select-all").addEventListener("change", function (e) {
-  const checkboxes = document.querySelectorAll('tbody input[type="checkbox"]');
-  checkboxes.forEach((checkbox) => (checkbox.checked = e.target.checked));
-});
+
+if (document.getElementById("select-all")) {
+  document.getElementById("select-all").addEventListener("change", function (e) {
+    const checkboxes = document.querySelectorAll('tbody input[type="checkbox"]:not(.switch-checkbox)');
+    checkboxes.forEach((checkbox) => (checkbox.checked = e.target.checked));
+  });
+}
+
+if (addBtn) {
+  addBtn.addEventListener("click", function (e) {
+    modal.classList.add("show");
+  });
+  modalClose.addEventListener("click", function (e) {
+    modal.classList.remove("show");
+  });
+
+}
+
