@@ -94,6 +94,13 @@
                 }
             }
             input[type="date"] {
+                width: 244px;
+                height: 48px;
+                padding: 12.599px 18.377px 14.401px 16px;
+                border-radius: 8px;
+                border: 1px solid #475e88;
+                outline: none;
+                background: rgba(123, 151, 206, 0.06);
                 @include mq(tablet-portrait-up) {
                     width: 100% !important;
                 }
