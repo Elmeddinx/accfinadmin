@@ -93,6 +93,11 @@
                     width: 100% !important;
                 }
             }
+            input[type="date"] {
+                @include mq(tablet-portrait-up) {
+                    width: 100% !important;
+                }
+            }
         }
         &__textarea {
             align-items: flex-start;
