@@ -123,6 +123,10 @@
             &__inner {
                 max-height: 65vh;
                 overflow-y: scroll;
+                
+                @include mq(tablet-portrait-up) {
+                    max-height: 55vh;
+                }
                 &::-webkit-scrollbar {
                     display: none;
                 }
