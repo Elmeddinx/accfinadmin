@@ -48,10 +48,13 @@ if (document.body.id == "login-page") {
   var modal = document.getElementById("modal");
   var modalInner = document.getElementById("modalInner");
   var modalClose = document.getElementById("modalClose");
+  var tableFilterBtn = document.getElementById("tableFilterBtn");
+  var tableFilterDropdown = document.getElementById("tableFilterDropdown");
 
   hamburger.addEventListener("click", function () {
     sidebar.classList.toggle("show");
   });
+
   document.addEventListener("click", function (e) {
     if (!sidebar.contains(e.target) && !hamburger.contains(e.target)) {
       sidebar.classList.remove("show");
@@ -62,13 +65,22 @@ if (document.body.id == "login-page") {
     if (!modalInner.contains(e.target) && !addBtn.contains(e.target)) {
       modal.classList.remove("show");
     }
+    if (!tableFilterBtn.contains(e.target) && !tableFilterDropdown.contains(e.target)) {
+      tableFilterDropdown.classList.remove("show");
+    }
   });
+
   sidebarClose.addEventListener("click", function () {
     sidebar.classList.remove("show");
   });
   profile.addEventListener("click", function () {
     profileDropdown.classList.toggle("show");
   });
+
+  tableFilterBtn.addEventListener("click", function () {
+    tableFilterDropdown.classList.toggle("show");
+  });
+
   function openTab(tabName) {
     var i, tabContent, tabLinks;
     tabContent = document.getElementsByClassName("sidebar-submenu__content");

@@ -69,6 +69,7 @@
             align-items: center;
             justify-content: space-between;
             @include mq(tablet-portrait-up) {
+                width: 100%;
                 flex-direction: column;
                 align-items: flex-start;
                 row-gap: 20px;
@@ -84,7 +85,7 @@
             .modal-input {
                 width: 244px;
                 height: 48px;
-                padding: 12.599px 18.377px 14.401px 16px;
+                padding: 12px 18px 14px 16px;
                 border-radius: 8px;
                 border: 1px solid #475e88;
                 outline: none;

@@ -45,7 +45,6 @@
         opacity: 0;
         width: 0;
         height: 0;
-        
     }
 
     .slider {
@@ -55,7 +54,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: #D0CFCF;
+        background-color: #d0cfcf;
         transition: 0.4s;
         border-radius: 34px;
 
@@ -73,10 +72,87 @@
     }
 
     input:checked + .slider {
-        background-color: #4E7DDA;
+        background-color: #4e7dda;
     }
 
     input:checked + .slider:before {
         transform: translateX(14px);
+    }
+}
+
+.status-block {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    .icon {
+        width: 12px;
+        height: 12px;
+        border-radius: 12px;
+    }
+    .text {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    &.status-red {
+        .icon {
+            background-color: #ff5353;
+            border: 1px solid #dee2e6;
+        }
+        .text {
+            color: #ff5353;
+        }
+    }
+    &.status-green {
+        .icon {
+            background-color: #56ba28;
+            border: 1px solid #dee2e6;
+        }
+        .text {
+            color: #56ba28;
+        }
+    }
+    &.status-gray {
+        .icon {
+            background-color: #64748b;
+            border: 1px solid #dee2e6;
+        }
+        .text {
+            color: #64748b;
+        }
+    }
+}
+
+.table-filter-dropdown {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    padding: 10px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0px 1px 3px 0px rgba(96, 108, 128, 0.05);
+    display: none;
+    &.show {
+        display: block;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+        li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            column-gap: 8px;
+            input[type="checkbox"] {
+
+            }
+            label {
+
+            }
+        }
     }
 }
