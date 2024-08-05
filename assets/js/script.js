@@ -40,7 +40,10 @@ if (document.body.id == "login-page") {
     });
   });
 
-  if (document.getElementById("modal")) {
+  if (
+    document.getElementById("modal") ||
+    document.getElementsByClassName("modal-tab-inner")
+  ) {
     var modalMenuItems = document.querySelectorAll(".modal-menu__item");
 
     modalMenuItems.forEach(function (item) {
@@ -51,8 +54,10 @@ if (document.body.id == "login-page") {
     });
 
     var firstModalMenuItem = document.querySelector(".modal-menu__item");
-    var defaultModalTab = firstModalMenuItem.getAttribute("data-tab");
-    openModalTab(defaultModalTab);
+    if (firstModalMenuItem) {
+      var defaultModalTab = firstModalMenuItem.getAttribute("data-tab");
+      openModalTab(defaultModalTab);
+    }
   }
 
   function openModalTab(tabName) {
@@ -74,14 +79,13 @@ if (document.body.id == "login-page") {
     document.querySelector(`[data-tab="${tabName}"]`).className += " active";
   }
 
-  document.querySelectorAll('.file-input').forEach(function(input) {
-    input.addEventListener('change', function() {
-        var fileNameElement = this.parentElement.querySelector('.file-name');
-        var fileName = this.files[0] ? this.files[0].name : 'No file chosen';
-        fileNameElement.textContent = fileName;
+  document.querySelectorAll(".file-input").forEach(function (input) {
+    input.addEventListener("change", function () {
+      var fileNameElement = this.parentElement.querySelector(".file-name");
+      var fileName = this.files[0] ? this.files[0].name : "No file chosen";
+      fileNameElement.textContent = fileName;
     });
-});
-
+  });
 
   var hamburger = document.getElementById("hamburger");
   var sidebar = document.getElementById("sidebar");
@@ -89,6 +93,7 @@ if (document.body.id == "login-page") {
   var profile = document.getElementById("profile");
   var profileDropdown = document.getElementById("profileDropdown");
   var addBtn = document.getElementById("addBtn");
+  var meetPlanBtn = document.getElementById("meetPlanBtn");
   var modal = document.getElementById("modal");
   var modalInner = document.getElementById("modalInner");
   var modalClose = document.getElementById("modalClose");
@@ -100,33 +105,46 @@ if (document.body.id == "login-page") {
   });
 
   document.addEventListener("click", function (e) {
-    if (!sidebar.contains(e.target) && !hamburger.contains(e.target)) {
+    if (sidebar) {
+      if (!sidebar.contains(e.target) && !hamburger.contains(e.target)) {
+        sidebar.classList.remove("show");
+      }
+    }
+    if (profile) {
+      if (!profile.contains(e.target) && !profileDropdown.contains(e.target)) {
+        profileDropdown.classList.remove("show");
+      }
+    }
+    if (modalInner) {
+      if (!modalInner.contains(e.target) && !addBtn.contains(e.target)) {
+        modal.classList.remove("show");
+      }
+    }
+    if (tableFilterBtn) {
+      if (
+        !tableFilterBtn.contains(e.target) &&
+        !tableFilterDropdown.contains(e.target)
+      ) {
+        tableFilterDropdown.classList.remove("show");
+      }
+    }
+  });
+
+  if (sidebarClose) {
+    sidebarClose.addEventListener("click", function () {
       sidebar.classList.remove("show");
-    }
-    if (!profile.contains(e.target) && !profileDropdown.contains(e.target)) {
-      profileDropdown.classList.remove("show");
-    }
-    if (!modalInner.contains(e.target) && !addBtn.contains(e.target)) {
-      modal.classList.remove("show");
-    }
-    if (
-      !tableFilterBtn.contains(e.target) &&
-      !tableFilterDropdown.contains(e.target)
-    ) {
-      tableFilterDropdown.classList.remove("show");
-    }
-  });
-
-  sidebarClose.addEventListener("click", function () {
-    sidebar.classList.remove("show");
-  });
-  profile.addEventListener("click", function () {
-    profileDropdown.classList.toggle("show");
-  });
-
-  tableFilterBtn.addEventListener("click", function () {
-    tableFilterDropdown.classList.toggle("show");
-  });
+    });
+  }
+  if (profile) {
+    profile.addEventListener("click", function () {
+      profileDropdown.classList.toggle("show");
+    });
+  }
+  if (tableFilterBtn) {
+    tableFilterBtn.addEventListener("click", function () {
+      tableFilterDropdown.classList.toggle("show");
+    });
+  }
 
   function openTab(tabName) {
     var i, tabContent, tabLinks;
@@ -183,6 +201,14 @@ if (document.getElementById("select-all")) {
 
 if (addBtn) {
   addBtn.addEventListener("click", function (e) {
+    modal.classList.add("show");
+  });
+  modalClose.addEventListener("click", function (e) {
+    modal.classList.remove("show");
+  });
+}
+if (meetPlanBtn) {
+  meetPlanBtn.addEventListener("click", function (e) {
     modal.classList.add("show");
   });
   modalClose.addEventListener("click", function (e) {

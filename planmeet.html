@@ -41,9 +41,9 @@
                                     Müştəri bazası</div>
                                 <ul class="sidebar-submenu__items">
                                     <li class="sidebar-submenu__item"><a href="#">Partnyorlar</a></li>
-                                    <li class="sidebar-submenu__item"><a href="./planmeet.html">Görüş planı</a></li>
+                                    <li class="sidebar-submenu__item active"><a href="./planmeet.html">Görüş planı</a></li>
                                     <li class="sidebar-submenu__item"><a href="#">Görüş neticələri</a></li>
-                                    <li class="sidebar-submenu__item active"><a href="./vob.html">VÖB</a></li>
+                                    <li class="sidebar-submenu__item"><a href="./vob.html">VÖB</a></li>
                                 </ul>
                             </div>
                             <div class="sidebar-submenu__inner">
@@ -51,7 +51,8 @@
                                         class="special-days">
                                     Özəl günlər</div>
                                 <ul class="sidebar-submenu__items">
-                                    <li class="sidebar-submenu__item active"><a href="./holidays.html">Bayramlar</a></li>
+                                    <li class="sidebar-submenu__item active"><a href="./holidays.html">Bayramlar</a>
+                                    </li>
                                     <li class="sidebar-submenu__item"><a href="#">Doğum günləri</a></li>
                                     <li class="sidebar-submenu__item"><a href="#">Kampaniyalar</a></li>
                                 </ul>
@@ -94,7 +95,8 @@
                                         class="special-days">
                                     Özəl günlər</div>
                                 <ul class="sidebar-submenu__items">
-                                    <li class="sidebar-submenu__item active"><a href="./holidays.html">Bayramlar</a></li>
+                                    <li class="sidebar-submenu__item active"><a href="./holidays.html">Bayramlar</a>
+                                    </li>
                                     <li class="sidebar-submenu__item"><a href="#">Doğum günləri</a></li>
                                     <li class="sidebar-submenu__item"><a href="#">Kampaniyalar</a></li>
                                 </ul>
@@ -150,15 +152,19 @@
                     <div class="main-inner__container">
                         <div class="main-inner__row breadcrumb-row">
                             <div class="main-inner__bccont">
-                                <h1>Bayramlar</h1>
+                                <h1>VÖB</h1>
                                 <div class="main-inner__breadcrumb">
-                                    <span>Özəl günlər</span>
+                                    <span>Müştəri bazası</span>
                                     <span>/</span>
-                                    <span class="active">Bayramlar</span>
+                                    <span class="active">VÖB</span>
                                 </div>
                             </div>
                             <div class="main-inner__btn">
                                 <div class="main-inner__btngroup">
+                                    <button class="main-inner__btn-fill">
+                                        <img src="./assets/icons/upload.png" alt="">
+                                        İmport
+                                    </button>
                                     <button class="main-inner__btn-stroke" id="addBtn">+ Əlavə et</button>
                                 </div>
                             </div>
@@ -254,7 +260,7 @@
                                                 <td>Bakı</td>
                                                 <td>ƏDV</td>
                                                 <td>Adil Hamidov</td>
-                                                <td><button class="blue-btn">Görüş Planla</button></td>
+                                                <td><button class="blue-btn" id="meetPlanBtn">Görüş Planla</button></td>
                                                 <td>
                                                     <div class="table-cell-inner">
                                                         <img src="./assets/icons/edit.png" alt="" class="showHideBtn">
@@ -276,7 +282,7 @@
                                                         <div class="text">İmtina</div>
                                                     </div>
                                                 </td>
-                                                <td><button class="blue-btn">Görüş Planla</button></td>
+                                                <td><button class="green-btn">Görüş Planla</button></td>
                                                 <td>
                                                     <div class="table-cell-inner">
                                                         <img src="./assets/icons/eye.png" alt="" class="showHideBtn">
@@ -299,7 +305,7 @@
                                                         <div class="text">İmtina</div>
                                                     </div>
                                                 </td>
-                                                <td><button class="blue-btn">Görüş Planla</button></td>
+                                                <td><button class="green-btn">Görüş Planla</button></td>
                                                 <td>
                                                     <div class="table-cell-inner">
                                                         <img src="./assets/icons/eye.png" alt="" class="showHideBtn">
@@ -315,14 +321,14 @@
                                                 <td>#242332228</td>
                                                 <td>Xidmət</td>
                                                 <td>Bakı</td>
-                                                <td>ƏDV</td>                                                
+                                                <td>ƏDV</td>
                                                 <td>
                                                     <div class="status-block status-red">
                                                         <div class="icon"></div>
                                                         <div class="text">İmtina</div>
                                                     </div>
                                                 </td>
-                                                <td><button class="blue-btn">Görüş Planla</button></td>
+                                                <td><button class="green-btn">Görüş Planla</button></td>
                                                 <td>
                                                     <div class="table-cell-inner">
                                                         <img src="./assets/icons/eye.png" alt="" class="showHideBtn">
@@ -340,7 +346,7 @@
                                                 <td>Bakı</td>
                                                 <td>ƏDV</td>
                                                 <td>Adil Hamidov</td>
-                                                <td><button class="blue-btn">Görüş Planla</button></td>
+                                                <td><button class="green-btn">Görüş Planla</button></td>
                                                 <td>
                                                     <div class="table-cell-inner">
                                                         <img src="./assets/icons/eye.png" alt="" class="showHideBtn">
@@ -358,7 +364,7 @@
                                                 <td>Bakı</td>
                                                 <td>ƏDV</td>
                                                 <td>Adil Hamidov</td>
-                                                <td><button class="blue-btn">Görüş Planla</button></td>
+                                                <td><button class="green-btn">Görüş Planla</button></td>
                                                 <td>
                                                     <div class="table-cell-inner">
                                                         <img src="./assets/icons/eye.png" alt="" class="showHideBtn">
@@ -376,7 +382,7 @@
                                                 <td>Bakı</td>
                                                 <td>ƏDV</td>
                                                 <td>Adil Hamidov</td>
-                                                <td><button class="blue-btn">Görüş Planla</button></td>
+                                                <td><button class="green-btn">Görüş Planla</button></td>
                                                 <td>
                                                     <div class="table-cell-inner">
                                                         <img src="./assets/icons/eye.png" alt="" class="showHideBtn">
@@ -394,7 +400,7 @@
                                                 <td>Bakı</td>
                                                 <td>ƏDV</td>
                                                 <td>Adil Hamidov</td>
-                                                <td><button class="blue-btn">Görüş Planla</button></td>
+                                                <td><button class="green-btn">Görüş Planla</button></td>
                                                 <td>
                                                     <div class="table-cell-inner">
                                                         <img src="./assets/icons/eye.png" alt="" class="showHideBtn">
@@ -420,25 +426,19 @@
     </div>
 
 
+
     <div class="modal" id="modal">
         <div class="modal-container">
-            <div class="modal-inner " id="modalInner">
+            <div class="modal-inner">
                 <div class="modal-header">
-                    <h4>Əlavə et</h4>
+                    <h4>Görüş planla</h4>
+                    <p>by adding a new user you are giving them permission to make changes.</p>
                 </div>
                 <div class="modal-form">
-                    <form action="" class="modal-form__holidays">
+                    <form action="" class="modal-form__meetplan">
                         <div class="modal-form__group">
-                            <label>Kampaniya adı</label>
-                            <input type="text" class="modal-input">
-                        </div>
-                        <div class="modal-form__group">
-                            <label>Tarixi</label>
+                            <label>Tarİx seçİn</label>
                             <input type="date" class="modal-input">
-                        </div>
-                        <div class="modal-form__group modal-form__textarea">
-                            <label>Kampaniya mətni</label>
-                            <textarea type="text" class="modal-input"></textarea>
                         </div>
                         <div class="modal-form__group modal-form__btn">
                             <button class="modal-btn">Əlavə et</button>
@@ -453,6 +453,7 @@
         </div>
     </div>
 
+    
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>

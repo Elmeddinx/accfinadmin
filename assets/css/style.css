@@ -879,6 +879,14 @@ body {
   font-weight: 700;
   line-height: 24px;
 }
+.modal-header p {
+  color: rgba(21, 25, 32, 0.5);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 10px;
+}
 .modal .modal-tab-inner {
   margin-top: 70px;
 }
@@ -1112,7 +1120,7 @@ body {
   align-items: center;
   gap: 10px;
   border-radius: 10px;
-  background: #FF5353;
+  background: #ff5353;
   border: none;
   color: #fff;
   font-size: 39px;
@@ -1179,6 +1187,19 @@ body {
   .modal-form__holidays {
     padding: 0;
   }
+}
+.modal-form__meetplan .modal-form__group {
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 17px;
+}
+.modal-form__meetplan .modal-form__group label {
+  color: #475e88;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  text-transform: uppercase;
 }
 .modal-form form {
   width: 100%;
