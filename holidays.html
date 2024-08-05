@@ -51,8 +51,7 @@
                                         class="special-days">
                                     Özəl günlər</div>
                                 <ul class="sidebar-submenu__items">
-                                    <li class="sidebar-submenu__item active"><a href="./holidays.html">Bayramlar</a>
-                                    </li>
+                                    <li class="sidebar-submenu__item active"><a href="./holidays.html">Bayramlar</a></li>
                                     <li class="sidebar-submenu__item"><a href="#">Doğum günləri</a></li>
                                     <li class="sidebar-submenu__item"><a href="#">Kampaniyalar</a></li>
                                 </ul>
@@ -95,8 +94,7 @@
                                         class="special-days">
                                     Özəl günlər</div>
                                 <ul class="sidebar-submenu__items">
-                                    <li class="sidebar-submenu__item active"><a href="./holidays.html">Bayramlar</a>
-                                    </li>
+                                    <li class="sidebar-submenu__item active"><a href="./holidays.html">Bayramlar</a></li>
                                     <li class="sidebar-submenu__item"><a href="#">Doğum günləri</a></li>
                                     <li class="sidebar-submenu__item"><a href="#">Kampaniyalar</a></li>
                                 </ul>
@@ -152,19 +150,15 @@
                     <div class="main-inner__container">
                         <div class="main-inner__row breadcrumb-row">
                             <div class="main-inner__bccont">
-                                <h1>VÖB</h1>
+                                <h1>Bayramlar</h1>
                                 <div class="main-inner__breadcrumb">
-                                    <span>Müştəri bazası</span>
+                                    <span>Özəl günlər</span>
                                     <span>/</span>
-                                    <span class="active">VÖB</span>
+                                    <span class="active">Bayramlar</span>
                                 </div>
                             </div>
                             <div class="main-inner__btn">
                                 <div class="main-inner__btngroup">
-                                    <button class="main-inner__btn-fill">
-                                        <img src="./assets/icons/upload.png" alt="">
-                                        İmport
-                                    </button>
                                     <button class="main-inner__btn-stroke" id="addBtn">+ Əlavə et</button>
                                 </div>
                             </div>
@@ -321,7 +315,7 @@
                                                 <td>#242332228</td>
                                                 <td>Xidmət</td>
                                                 <td>Bakı</td>
-                                                <td>ƏDV</td>
+                                                <td>ƏDV</td>                                                
                                                 <td>
                                                     <div class="status-block status-red">
                                                         <div class="icon"></div>
@@ -426,188 +420,32 @@
     </div>
 
 
-    <div class="modal show" id="modal">
+    <div class="modal" id="modal">
         <div class="modal-container">
             <div class="modal-inner " id="modalInner">
                 <div class="modal-header">
                     <h4>Əlavə et</h4>
                 </div>
-                <div class="modal-tab-inner">
-                    <div class="modal-menu">
-                        <div class="modal-menu__item active" data-tab="data-tab-1">Şirkət haqqında</div>
-                        <div class="modal-menu__item" data-tab="data-tab-2">Əməkdaşlıq</div>
-                        <div class="modal-menu__item" data-tab="data-tab-3">İşçilər</div>
-                    </div>
-                    <div class="modal-submenu">
-                        <div class="modal-submenu__content" id="data-tab-1">
-                            <div class="modal-submenu__inner">
-                                <div class="modal-form">
-                                    <form action="" class="modal-form__tab">
-                                        <div class="modal-form__row">
-                                            <div class="modal-form__group">
-                                                <label>Şirkət adı</label>
-                                                <input type="text" class="modal-input">
-                                            </div>
-                                            <div class="modal-form__group">
-                                                <label>VÖEN</label>
-                                                <input type="text" class="modal-input">
-                                            </div>
-                                        </div>
-
-                                        <div class="modal-form__row">
-                                            <div class="modal-form__group">
-                                                <label>Rəhbər</label>
-                                                <input type="text" class="modal-input">
-                                            </div>
-                                            <div class="modal-form__group">
-                                                <label>Rehberin doğum günü</label>
-                                                <input type="date" class="modal-input">
-                                            </div>
-                                        </div>
-
-                                        <div class="modal-form__row">
-                                            <div class="modal-form__group">
-                                                <label>Təyinat</label>
-                                                <input type="text" class="modal-input">
-                                            </div>
-                                            <div class="modal-form__group">
-                                                <label>Təsis tarixi</label>
-                                                <input type="text" class="modal-input">
-                                            </div>
-                                        </div>
-
-                                        <div class="modal-form__row">
-                                            <div class="modal-form__group">
-                                                <label>E-mail</label>
-                                                <input type="text" class="modal-input">
-                                            </div>
-                                            <div class="modal-form__group">
-                                                <label>Telefon</label>
-                                                <input type="text" class="modal-input">
-                                            </div>
-                                        </div>
-
-                                        <div class="modal-form__row">
-                                            <div class="modal-form__group">
-                                                <label>Websayt</label>
-                                                <input type="text" class="modal-input">
-                                            </div>
-                                            <div class="modal-form__group">
-                                                <label>Fəaliyyət sahələri</label>
-                                                <input type="text" class="modal-input">
-                                            </div>
-                                        </div>
-                                        <div class="modal-form__group modal-form__btn">
-                                            <button class="modal-btn">Əlavə et</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
+                <div class="modal-form">
+                    <form action="" class="modal-form__holidays">
+                        <div class="modal-form__group">
+                            <label>Kampaniya adı</label>
+                            <input type="text" class="modal-input">
                         </div>
-                        <div class="modal-submenu__content" id="data-tab-2">
-                            <div class="modal-submenu__inner">
-                                <div class="modal-form">
-                                    <form action="" class="modal-form__tab">
-                                        <div class="modal-form__row">
-                                            <div class="modal-form__group">
-                                                <label>Müqavilə NO</label>
-                                                <input type="text" class="modal-input">
-                                            </div>
-                                            <div class="modal-form__group">
-                                                <label>Müqavilə tarixi</label>
-                                                <input type="date" class="modal-input">
-                                            </div>
-                                        </div>
-
-                                        <div class="modal-form__row">
-                                            <div class="modal-form__group">
-                                                <label>Məsul şəxs</label>
-                                                <input type="text" class="modal-input">
-                                            </div>
-                                            <div class="modal-form__group">
-                                                <label>Referans</label>
-                                                <input type="text" class="modal-input">
-                                            </div>
-                                        </div>
-
-                                        <div class="modal-form__row">
-                                            <div class="modal-form__group modal-form__group-file">
-                                                <div class="modal-form__file">
-                                                    <div class="modal-form__file-header">
-                                                        <img src="./assets/icons/download.png" alt="">
-                                                        <p>Müqavilə</p>
-                                                    </div>
-                                                    <div class="modal-form__file-input">
-                                                        <div class="file-input-container">
-                                                            <input type="file" id="file-input-1" class="file-input" />
-                                                            <label for="file-input-1" class="file-input-label">Choose file</label>
-                                                            <div class="file-name">No file chosen</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="modal-form__file">
-                                                    <div class="modal-form__file-header">
-                                                        <img src="./assets/icons/download.png" alt="">
-                                                        <p>Təklif</p>
-                                                    </div>
-                                                    <div class="modal-form__file-input">
-                                                        <div class="file-input-container">
-                                                            <input type="file" id="file-input-2" class="file-input" />
-                                                            <label for="file-input-2" class="file-input-label">Choose file</label>
-                                                            <div class="file-name">No file chosen</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="modal-form__file">
-                                                    <div class="modal-form__file-header">
-                                                        <img src="./assets/icons/download.png" alt="">
-                                                        <p>Rəy</p>
-                                                    </div>
-                                                    <div class="modal-form__file-input">
-                                                        <div class="file-input-container">
-                                                            <input type="file" id="file-input-3" class="file-input" />
-                                                            <label for="file-input-3" class="file-input-label">Choose file</label>
-                                                            <div class="file-name">No file chosen</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="modal-form__file">
-                                                    <div class="modal-form__file-header">
-                                                        <img src="./assets/icons/download.png" alt="">
-                                                        <p>Protokol</p>
-                                                    </div>
-                                                    <div class="modal-form__file-input">
-                                                        <div class="file-input-container">
-                                                            <input type="file" id="file-input-4" class="file-input" />
-                                                            <label for="file-input-4" class="file-input-label">Choose file</label>
-                                                            <div class="file-name">No file chosen</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-form__group modal-form__btn">
-                                            <button class="modal-btn">Əlavə et</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
+                        <div class="modal-form__group">
+                            <label>Tarixi</label>
+                            <input type="date" class="modal-input">
                         </div>
-                        <div class="modal-submenu__content" id="data-tab-3">
-                            <div class="modal-submenu__inner">
-                                <div class="modal-submenu__header">
-
-                                </div>
-                            </div>
-                            <div class="modal-submenu__inner">
-                                <div class="modal-submenu__header">
-
-                                </div>
-                            </div>
+                        <div class="modal-form__group modal-form__textarea">
+                            <label>Kampaniya mətni</label>
+                            <textarea type="text" class="modal-input"></textarea>
                         </div>
-                    </div>
+                        <div class="modal-form__group modal-form__btn">
+                            <button class="modal-btn">Əlavə et</button>
+                        </div>
+
+                    </form>
                 </div>
-
                 <div class="modal-close" id="modalClose">
                     <img src="./assets/icons/modal-close.png" alt="">
                 </div>

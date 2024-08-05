@@ -39,6 +39,50 @@ if (document.body.id == "login-page") {
       this.classList.add("active");
     });
   });
+
+  if (document.getElementById("modal")) {
+    var modalMenuItems = document.querySelectorAll(".modal-menu__item");
+
+    modalMenuItems.forEach(function (item) {
+      item.addEventListener("click", function () {
+        var tabName = this.getAttribute("data-tab");
+        openModalTab(tabName);
+      });
+    });
+
+    var firstModalMenuItem = document.querySelector(".modal-menu__item");
+    var defaultModalTab = firstModalMenuItem.getAttribute("data-tab");
+    openModalTab(defaultModalTab);
+  }
+
+  function openModalTab(tabName) {
+    var i, tabContent, tabLinks;
+    tabContent = document.getElementsByClassName("modal-submenu__content");
+    for (i = 0; i < tabContent.length; i++) {
+      tabContent[i].style.display = "none";
+    }
+    tabLinks = document.getElementsByClassName("modal-menu__item");
+    for (i = 0; i < tabLinks.length; i++) {
+      tabLinks[i].className = tabLinks[i].className.replace(" active", "");
+    }
+    if (document.getElementById("modal")) {
+      document.getElementById(tabName).style.display = "block";
+    } else {
+      document.getElementById(tabName).style.display = "flex";
+    }
+
+    document.querySelector(`[data-tab="${tabName}"]`).className += " active";
+  }
+
+  document.querySelectorAll('.file-input').forEach(function(input) {
+    input.addEventListener('change', function() {
+        var fileNameElement = this.parentElement.querySelector('.file-name');
+        var fileName = this.files[0] ? this.files[0].name : 'No file chosen';
+        fileNameElement.textContent = fileName;
+    });
+});
+
+
   var hamburger = document.getElementById("hamburger");
   var sidebar = document.getElementById("sidebar");
   var sidebarClose = document.getElementById("sidebarClose");
@@ -65,7 +109,10 @@ if (document.body.id == "login-page") {
     if (!modalInner.contains(e.target) && !addBtn.contains(e.target)) {
       modal.classList.remove("show");
     }
-    if (!tableFilterBtn.contains(e.target) && !tableFilterDropdown.contains(e.target)) {
+    if (
+      !tableFilterBtn.contains(e.target) &&
+      !tableFilterDropdown.contains(e.target)
+    ) {
       tableFilterDropdown.classList.remove("show");
     }
   });
@@ -124,10 +171,14 @@ if (document.body.id == "login-page") {
 }
 
 if (document.getElementById("select-all")) {
-  document.getElementById("select-all").addEventListener("change", function (e) {
-    const checkboxes = document.querySelectorAll('tbody input[type="checkbox"]:not(.switch-checkbox)');
-    checkboxes.forEach((checkbox) => (checkbox.checked = e.target.checked));
-  });
+  document
+    .getElementById("select-all")
+    .addEventListener("change", function (e) {
+      const checkboxes = document.querySelectorAll(
+        'tbody input[type="checkbox"]:not(.switch-checkbox)'
+      );
+      checkboxes.forEach((checkbox) => (checkbox.checked = e.target.checked));
+    });
 }
 
 if (addBtn) {
@@ -137,6 +188,4 @@ if (addBtn) {
   modalClose.addEventListener("click", function (e) {
     modal.classList.remove("show");
   });
-
 }
-
