@@ -24,10 +24,6 @@
         padding: 50px;
         position: relative;
 
-        @include mq(tablet-landscape-up) {
-            overflow-y: scroll;
-            max-height: 80vh;
-        }
         @include mq(tablet-portrait-up) {
             width: 90%;
             &::-webkit-scrollbar {
@@ -69,7 +65,7 @@
             align-items: center;
             justify-content: center;
             column-gap: 16px;
-
+            padding-bottom: 15px;
             @include mq(tablet-portrait-up) {
                 column-gap: 12px;
             }
@@ -122,6 +118,22 @@
                 }
             }
             &__inner {
+                max-height: 65vh;
+                overflow-y: scroll;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+                &::-webkit-scrollbar-thumb {
+                    display: none;
+                }
+
+                &::-webkit-scrollbar-thumb:hover {
+                    display: none;
+                }
+
+                &::-webkit-scrollbar-track {
+                    display: none;
+                }
                 .modal-form {
                     form {
                         row-gap: 30px;
@@ -157,7 +169,6 @@
                         }
                         &-file {
                             width: 65%;
-                            
                         }
                     }
                     &__btn {
@@ -218,6 +229,80 @@
                                 font-weight: 600;
                                 line-height: 24px;
                                 margin-top: 10px;
+                            }
+                        }
+                    }
+                    &-add-btn {
+                        display: flex;
+                        width: 64px;
+                        height: 49px;
+                        padding: 6px 16px;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                        border-radius: 10px;
+                        background: #4e7dda;
+                        border: none;
+                        color: #fff;
+                        font-size: 39px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 24px;
+                        cursor: pointer;
+                        @include mq(tablet-portrait-up) {
+                            width: 40px;
+                            height: 30px;
+                            font-size: 25px;
+                            line-height: 14px;
+                        }
+                    }
+                    &-delete-btn {
+                        display: flex;
+                        width: 64px;
+                        height: 49px;
+                        padding: 6px 16px;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                        border-radius: 10px;
+                        background: #FF5353;
+                        border: none;
+                        color: #fff;
+                        font-size: 39px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 24px;
+                        cursor: pointer;
+                        @include mq(tablet-portrait-up) {
+                            width: 40px;
+                            height: 30px;
+                            font-size: 25px;
+                            line-height: 14px;
+                        }
+                    }
+                    &__employee-tab {
+                        .modal-form__row {
+                            @include mq(tablet-landscape-up) {
+                                flex-direction: row;
+                                align-items: flex-end;
+                            }
+                            @include mq(tablet-portrait-up) {
+                                column-gap: 10px;
+                            }
+                            .modal-form__group {
+                                width: 40%;
+                                column-gap: 8px;
+                                &:nth-last-child(1) {
+                                    width: 64px;
+                                    @include mq(tablet-portrait-up) {
+                                        width: 40px;
+                                    }
+                                }
+                                @include mq(tablet-landscape-up) {
+                                    column-gap: 8px;
+                                }
                             }
                         }
                     }
