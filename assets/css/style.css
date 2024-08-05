@@ -37,7 +37,21 @@ body {
   .sidebar-header.show {
     width: 100%;
     position: fixed;
+    overflow: scroll;
+    max-height: 100vh;
   }
+}
+.sidebar-header.show::-webkit-scrollbar {
+  display: none;
+}
+.sidebar-header.show::-webkit-scrollbar-thumb {
+  display: none;
+}
+.sidebar-header.show::-webkit-scrollbar-thumb:hover {
+  display: none;
+}
+.sidebar-header.show::-webkit-scrollbar-track {
+  display: none;
 }
 @keyframes show-sidebar {
   to {
@@ -908,7 +922,7 @@ body {
     width: 100% !important;
   }
 }
-.modal-form__group input[type=date] {
+.modal-form__group .modal-input[type=date] {
   width: 244px;
   height: 48px;
   padding: 12.599px 18.377px 14.401px 16px;
@@ -918,7 +932,7 @@ body {
   background: rgba(123, 151, 206, 0.06);
 }
 @media only screen and (max-width: 768px) {
-  .modal-form__group input[type=date] {
+  .modal-form__group .modal-input[type=date] {
     width: 100% !important;
   }
 }
