@@ -21,8 +21,6 @@
         @include mq(phone-only) {
             width: 100%;
             position: fixed;
-            overflow: scroll;
-            max-height: 110vh;
             height: 100vh;
         }
         &::-webkit-scrollbar {
@@ -106,6 +104,12 @@
     .sidebar-submenu {
         width: 100%;
         margin-top: 50px;
+        
+        @include mq(phone-only) {
+            margin-top: 30px;
+            overflow: scroll;
+            max-height: 55vh;
+        }
         &__content {
             display: none;
             flex-direction: column;

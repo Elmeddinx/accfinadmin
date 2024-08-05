@@ -59,6 +59,9 @@
     }
     .modal-tab-inner {
         margin-top: 70px;
+        @include mq(tablet-portrait-up) {
+            margin-top: 35px;
+        }
         .modal-menu {
             width: 100%;
             display: flex;

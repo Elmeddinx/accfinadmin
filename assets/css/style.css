@@ -37,8 +37,6 @@ body {
   .sidebar-header.show {
     width: 100%;
     position: fixed;
-    overflow: scroll;
-    max-height: 110vh;
     height: 100vh;
   }
 }
@@ -129,6 +127,13 @@ body {
 .sidebar-inner .sidebar-submenu {
   width: 100%;
   margin-top: 50px;
+}
+@media only screen and (max-width: 480px) {
+  .sidebar-inner .sidebar-submenu {
+    margin-top: 30px;
+    overflow: scroll;
+    max-height: 55vh;
+  }
 }
 .sidebar-inner .sidebar-submenu__content {
   display: none;
@@ -876,6 +881,11 @@ body {
 }
 .modal .modal-tab-inner {
   margin-top: 70px;
+}
+@media only screen and (max-width: 768px) {
+  .modal .modal-tab-inner {
+    margin-top: 35px;
+  }
 }
 .modal .modal-tab-inner .modal-menu {
   width: 100%;
