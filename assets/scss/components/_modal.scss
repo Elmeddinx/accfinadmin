@@ -103,7 +103,7 @@
                     background: rgba(123, 151, 206, 0.06);
                     @include mq(tablet-portrait-up) {
                         width: 100% !important;
-                        min-width: 100% !important;
+                        min-width: 95% !important;
                     }
                 }
             }
