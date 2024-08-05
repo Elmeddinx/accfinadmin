@@ -22,7 +22,8 @@
             width: 100%;
             position: fixed;
             overflow: scroll;
-            max-height: 100vh;
+            max-height: 110vh;
+            height: 100vh;
         }
         &::-webkit-scrollbar {
             display: none;
