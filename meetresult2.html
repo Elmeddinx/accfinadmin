@@ -41,8 +41,9 @@
                                     Müştəri bazası</div>
                                 <ul class="sidebar-submenu__items">
                                     <li class="sidebar-submenu__item"><a href="./send.html">Partnyorlar</a></li>
-                                    <li class="sidebar-submenu__item active"><a href="./planmeet.html">Görüş planı</a></li>
-                                    <li class="sidebar-submenu__item"><a href="./meetresult.html">Görüş neticələri</a></li>
+                                    <li class="sidebar-submenu__item"><a href="./planmeet.html">Görüş planı</a></li>
+                                    <li class="sidebar-submenu__item active"><a href="./meetresult.html">Görüş
+                                            neticələri</a></li>
                                     <li class="sidebar-submenu__item"><a href="./vob.html">VÖB</a></li>
                                 </ul>
                             </div>
@@ -86,7 +87,8 @@
                                 <ul class="sidebar-submenu__items">
                                     <li class="sidebar-submenu__item active"><a href="./send.html">Partnyorlar</a></li>
                                     <li class="sidebar-submenu__item"><a href="./planmeet.html">Görüş planı</a></li>
-                                    <li class="sidebar-submenu__item"><a href="./meetresult.html">Görüş neticələri</a></li>
+                                    <li class="sidebar-submenu__item"><a href="./meetresult.html">Görüş neticələri</a>
+                                    </li>
                                     <li class="sidebar-submenu__item"><a href="#">VÖB</a></li>
                                 </ul>
                             </div>
@@ -282,7 +284,7 @@
                                                         <div class="text">İmtina</div>
                                                     </div>
                                                 </td>
-                                                <td><button class="green-btn">Görüş Planla</button></td>
+                                                <td><button class="blue-btn">Görüş Planla</button></td>
                                                 <td>
                                                     <div class="table-cell-inner">
                                                         <img src="./assets/icons/eye.png" alt="" class="showHideBtn">
@@ -305,7 +307,7 @@
                                                         <div class="text">İmtina</div>
                                                     </div>
                                                 </td>
-                                                <td><button class="green-btn">Görüş Planla</button></td>
+                                                <td><button class="blue-btn">Görüş Planla</button></td>
                                                 <td>
                                                     <div class="table-cell-inner">
                                                         <img src="./assets/icons/eye.png" alt="" class="showHideBtn">
@@ -328,7 +330,7 @@
                                                         <div class="text">İmtina</div>
                                                     </div>
                                                 </td>
-                                                <td><button class="green-btn">Görüş Planla</button></td>
+                                                <td><button class="blue-btn">Görüş Planla</button></td>
                                                 <td>
                                                     <div class="table-cell-inner">
                                                         <img src="./assets/icons/eye.png" alt="" class="showHideBtn">
@@ -346,7 +348,7 @@
                                                 <td>Bakı</td>
                                                 <td>ƏDV</td>
                                                 <td>Adil Hamidov</td>
-                                                <td><button class="green-btn">Görüş Planla</button></td>
+                                                <td><button class="blue-btn">Görüş Planla</button></td>
                                                 <td>
                                                     <div class="table-cell-inner">
                                                         <img src="./assets/icons/eye.png" alt="" class="showHideBtn">
@@ -364,7 +366,7 @@
                                                 <td>Bakı</td>
                                                 <td>ƏDV</td>
                                                 <td>Adil Hamidov</td>
-                                                <td><button class="green-btn">Görüş Planla</button></td>
+                                                <td><button class="blue-btn">Görüş Planla</button></td>
                                                 <td>
                                                     <div class="table-cell-inner">
                                                         <img src="./assets/icons/eye.png" alt="" class="showHideBtn">
@@ -382,7 +384,7 @@
                                                 <td>Bakı</td>
                                                 <td>ƏDV</td>
                                                 <td>Adil Hamidov</td>
-                                                <td><button class="green-btn">Görüş Planla</button></td>
+                                                <td><button class="blue-btn">Görüş Planla</button></td>
                                                 <td>
                                                     <div class="table-cell-inner">
                                                         <img src="./assets/icons/eye.png" alt="" class="showHideBtn">
@@ -400,7 +402,7 @@
                                                 <td>Bakı</td>
                                                 <td>ƏDV</td>
                                                 <td>Adil Hamidov</td>
-                                                <td><button class="green-btn">Görüş Planla</button></td>
+                                                <td><button class="blue-btn">Görüş Planla</button></td>
                                                 <td>
                                                     <div class="table-cell-inner">
                                                         <img src="./assets/icons/eye.png" alt="" class="showHideBtn">
@@ -426,22 +428,140 @@
     </div>
 
 
-
-    <div class="modal" id="modal">
+    <div class="modal show" id="modal">
         <div class="modal-container">
-            <div class="modal-inner">
+            <div class="modal-inner " id="modalInner">
                 <div class="modal-header">
-                    <h4>Görüş planla</h4>
-                    <p>by adding a new user you are giving them permission to make changes.</p>
+                    <h4>ƏMR</h4>
                 </div>
                 <div class="modal-form">
-                    <form action="" class="modal-form__meetplan">
-                        <div class="modal-form__group">
-                            <label>Tarİx seçİn</label>
-                            <input type="date" class="modal-input">
+                    <form action="" class="modal-form__command">
+                        <div class="modal-form__row">
+                            <div class="modal-form__group">
+                                <label>VÖENi</label>
+                                <input type="text" class="modal-input" value="123456" disabled>
+                            </div>
+                            <div class="modal-form__group">
+                                <label>Rəhbərİn ADI</label>
+                                <input type="text" class="modal-input" value="Elşad " disabled>
+                            </div>
+                            <div class="modal-form__group">
+                                <label>Telefon</label>
+                                <input type="text" class="modal-input" value="+994 55 5555555" disabled>
+                            </div>
+                        </div>
+                        <div class="modal-form__row">
+                            <div class="modal-form__group">
+                                <label> adı</label>
+                                <input type="text" class="modal-input" value="ACCFİN MMC" disabled>
+                            </div>
+                            <div class="modal-form__group">
+                                <label>Şəhər</label>
+                                <input type="text" class="modal-input" value="Bakı " disabled>
+                            </div>
+                            <div class="modal-form__group">
+                                <label>Görüş tarixi</label>
+                                <input type="date" class="modal-input" value="2024-06-16" disabled>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="modal-form__row modal-form-midline">
+                            <div class="modal-form__group">
+                                <div class="modal-form__group-header">Növü</div>
+                                <select name="" id="" class="modal-input">
+                                    <option value="Görüş" selected>Görüş</option>
+                                    <option value="Xidmət">Xidmət</option>
+                                </select>
+                            </div>
+                            <div class="modal-form__group modal-form__group-midline">
+                                <div class="modal-form__group-header">Nəticəsi</div>
+                                <div class="modal-input dropdown">
+                                    <div class="dropdown-result">Qismən audit</div>
+                                    <div class="dropdown-content">
+                                        <label>
+                                            Qismən audit <input type="checkbox" checked value="Qismən audit">
+                                        </label>
+                                        <label>
+                                            Monitorinq <input type="checkbox" value="Monitorinq">
+                                        </label>
+                                        <label>
+                                            1C <input type="checkbox" value="1C">
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="modal-form__group modal-form__group-midline">
+                                <div class="modal-form__group-header">Əməliyyat tarixi</div>
+                                <input type="date" name="" id="" value="2024-06-15" class="modal-input">
+                            </div>
+                            <div class="modal-form__group modal-form__group-midline">
+                                <div class="modal-form__group-header">Qeyd</div>
+                                <textarea type="text" class="modal-input"></textarea>
+                            </div>
+                        </div>
+                        <div class="modal-form__row">
+                            <div class="modal-form__group modal-form__group-file">
+                                <div class="modal-form__file">
+                                    <div class="modal-form__file-header">
+                                        <img src="./assets/icons/download.png" alt="">
+                                        <p>Müqavilə</p>
+                                    </div>
+                                    <div class="modal-form__file-input">
+                                        <div class="file-input-container">
+                                            <input type="file" id="file-input-1" class="file-input" />
+                                            <label for="file-input-1" class="file-input-label">Choose
+                                                file</label>
+                                            <div class="file-name">No file chosen</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-form__file">
+                                    <div class="modal-form__file-header">
+                                        <img src="./assets/icons/download.png" alt="">
+                                        <p>Təklif</p>
+                                    </div>
+                                    <div class="modal-form__file-input">
+                                        <div class="file-input-container">
+                                            <input type="file" id="file-input-2" class="file-input" />
+                                            <label for="file-input-2" class="file-input-label">Choose
+                                                file</label>
+                                            <div class="file-name">No file chosen</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-form__file">
+                                    <div class="modal-form__file-header">
+                                        <img src="./assets/icons/download.png" alt="">
+                                        <p>Rəy</p>
+                                    </div>
+                                    <div class="modal-form__file-input">
+                                        <div class="file-input-container">
+                                            <input type="file" id="file-input-3" class="file-input" />
+                                            <label for="file-input-3" class="file-input-label">Choose
+                                                file</label>
+                                            <div class="file-name">No file chosen</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-form__file">
+                                    <div class="modal-form__file-header">
+                                        <img src="./assets/icons/download.png" alt="">
+                                        <p>Protokol</p>
+                                    </div>
+                                    <div class="modal-form__file-input">
+                                        <div class="file-input-container">
+                                            <input type="file" id="file-input-4" class="file-input" />
+                                            <label for="file-input-4" class="file-input-label">Choose
+                                                file</label>
+                                            <div class="file-name">No file chosen</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="modal-form__group modal-form__btn">
-                            <button class="modal-btn">Əlavə et</button>
+                            <button class="modal-btn">Yadda Saxla</button>
                         </div>
 
                     </form>
@@ -450,10 +570,11 @@
                     <img src="./assets/icons/modal-close.png" alt="">
                 </div>
             </div>
+
         </div>
     </div>
 
-    
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
