@@ -783,7 +783,12 @@ body {
   color: #64748b;
 }
 
+.thead-in-filter {
+  position: relative !important;
+}
+
 .table-filter-dropdown {
+  width: 100%;
   height: auto;
   position: absolute;
   top: 0;

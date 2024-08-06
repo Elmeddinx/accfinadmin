@@ -141,11 +141,11 @@ if (document.body.id == "login-page") {
       profileDropdown.classList.toggle("show");
     });
   }
-  // if (tableFilterBtn) {
-  //   tableFilterBtn.addEventListener("click", function () {
-  //     tableFilterDropdown.classList.toggle("show");
-  //   });
-  // }
+  if (tableFilterBtn) {
+    tableFilterBtn.addEventListener("click", function () {
+      tableFilterDropdown.classList.toggle("show");
+    });
+  }
 
   function openTab(tabName) {
     var i, tabContent, tabLinks;
@@ -230,29 +230,3 @@ if (optionsBtn) {
     });
   });
 }
-document
-  .getElementById("tableFilterBtn")
-  .addEventListener("click", function (event) {
-    const dropdown = document.getElementById("tableFilterDropdown");
-
-    // Dropdown menüsünü aç/kapat
-    dropdown.classList.toggle("show");
-
-    // Düğmenin konumunu al
-    const theadInFilter = document.querySelector(".thead-in-filter");
-
-    if (theadInFilter) {
-      const rect = theadInFilter.getBoundingClientRect();
-      const width = rect.width;
-      const top = rect.top;
-      const left = rect.left;
-      console.log(rect);
-      // Dropdown menüsünün konumunu ayarla
-      dropdown.style.width = width + "px";
-      dropdown.style.top = top + "px";
-      dropdown.style.left = left + "px";
-    }
-
-    // Olayın sayfadaki diğer tıklama eventlerine yayılmasını önler
-    event.stopPropagation();
-  });
