@@ -642,14 +642,15 @@ body {
   width: 24px;
   height: 24px;
 }
-.table-container .table-pagination {
+
+.table-pagination {
   display: flex;
   justify-content: space-between;
   padding: 16px;
   border-top: 1px solid #ddd;
   margin-top: 20px;
 }
-.table-container .table-pagination a {
+.table-pagination a {
   text-decoration: none;
   color: #cbd5e1;
   text-align: center;
@@ -658,11 +659,11 @@ body {
   font-weight: 800;
   line-height: 18px;
 }
-.table-container .table-pagination a.active {
+.table-pagination a.active {
   color: #00aaff;
   cursor: pointer;
 }
-.table-container .table-pagination span {
+.table-pagination span {
   color: #64748b;
   text-align: center;
   font-size: 12px;
@@ -1056,7 +1057,7 @@ body {
   align-items: center;
 }
 .modal .modal-tab-inner .modal-submenu__inner .modal-form__file-input .file-input {
-  display: none; /* input'u gizle */
+  display: none;
 }
 .modal .modal-tab-inner .modal-submenu__inner .modal-form__file-input .file-input-label {
   display: flex;
@@ -1201,6 +1202,189 @@ body {
   line-height: 16px;
   text-transform: uppercase;
 }
+.modal-form__command {
+  max-height: 75vh;
+  overflow-y: scroll;
+}
+@media only screen and (max-width: 768px) {
+  .modal-form__command {
+    max-height: 55vh;
+  }
+}
+.modal-form__command::-webkit-scrollbar {
+  display: none;
+}
+.modal-form__command::-webkit-scrollbar-thumb {
+  display: none;
+}
+.modal-form__command::-webkit-scrollbar-thumb:hover {
+  display: none;
+}
+.modal-form__command::-webkit-scrollbar-track {
+  display: none;
+}
+.modal-form__command .modal-form__group {
+  width: 33%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  row-gap: 17px;
+}
+.modal-form__command .modal-form__group label {
+  color: #475e88;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+.modal-form__command .modal-form__group input,
+.modal-form__command .modal-form__group select,
+.modal-form__command .modal-form__group textarea {
+  max-width: 100%;
+  border: none !important;
+}
+.modal-form__command .modal-form__group textarea {
+  width: 212px;
+  height: 129px;
+}
+.modal-form__command .modal-form__group input[disabled] {
+  border-color: #6c757d;
+  background-color: rgba(108, 117, 125, 0.13);
+}
+@media only screen and (max-width: 768px) {
+  .modal-form__command .modal-form__group {
+    width: 100%;
+  }
+}
+.modal-form__command .modal-form__group-file {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+@media only screen and (max-width: 480px) {
+  .modal-form__command .modal-form__group-file {
+    margin-top: 25px;
+  }
+}
+.modal-form__command .modal-form__group-header {
+  color: #475e88;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+.modal-form__command .modal-form-midline {
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .modal-form__command .modal-form-midline {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+}
+.modal-form__command .modal-form-midline .modal-form__group {
+  width: 25% !important;
+}
+@media only screen and (max-width: 768px) {
+  .modal-form__command .modal-form-midline .modal-form__group {
+    width: 47% !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .modal-form__command .modal-form-midline .modal-form__group {
+    width: 100% !important;
+  }
+}
+.modal-form__command .modal-form-midline .modal-input {
+  width: 100%;
+}
+.modal-form__command .modal-form hr {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+.modal-form__command .modal-form__row {
+  display: flex;
+  -moz-column-gap: 35px;
+       column-gap: 35px;
+}
+@media only screen and (max-width: 1024px) {
+  .modal-form__command .modal-form__row {
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .modal-form__command .modal-form__row {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+.modal-form__command .modal-form__file-header {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  margin-bottom: 20px;
+}
+.modal-form__command .modal-form__file-header img {
+  width: 20px;
+  height: 20px;
+}
+.modal-form__command .modal-form__file-header p {
+  color: #374957;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+.modal-form__command .modal-form__file-input .file-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal-form__command .modal-form__file-input .file-input {
+  display: none;
+}
+.modal-form__command .modal-form__file-input .file-input-label {
+  display: flex;
+  width: 122px;
+  height: 26px;
+  padding: 1px 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #8c8c8c;
+  background: rgba(123, 151, 206, 0.06);
+  color: #6484aa;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+.modal-form__command .modal-form__file-input .file-name {
+  color: #4e7dda;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  margin-top: 10px;
+}
+.modal-form__command .modal-form__btn {
+  width: 100%;
+  align-items: flex-end;
+  margin-top: 30px;
+}
 .modal-form form {
   width: 100%;
   display: flex;
@@ -1297,6 +1481,37 @@ body {
     width: 100%;
   }
 }
+.modal-table {
+  width: 100%;
+  overflow-x: auto;
+}
+.modal-table table {
+  width: 100%;
+  min-width: 1038px;
+  border-collapse: collapse;
+}
+.modal-table table thead th {
+  background-color: #f8fafc;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 20px;
+}
+.modal-table table th,
+.modal-table table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #f1f5f9;
+  color: #64748b;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.modal-table table th:first-child, .modal-table table th:last-child,
+.modal-table table td:first-child,
+.modal-table table td:last-child {
+  padding: 13px 20px;
+}
 .modal-close {
   width: 38px;
   height: 38px;
@@ -1312,6 +1527,15 @@ body {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+.modal .table-modal-searchbar {
+  margin-bottom: 24px;
+}
+@media only screen and (max-width: 768px) {
+  .modal .table-modal-searchbar {
+    display: block;
+    width: 100%;
+  }
 }
 
 .login-page {
