@@ -10,6 +10,9 @@
             min-width: 1038px;
             border-collapse: collapse;
             thead {
+                &.thead-in-filter {
+                    position: relative;
+                }
                 &:nth-child(1) {
                     th {
                         font-weight: 700;
@@ -52,9 +55,6 @@
                 .table-cell-inner {
                     display: flex;
                     align-items: center;
-                    img {
-                        margin-right: 5px;
-                    }
                     &__filter {
                         margin-left: 8px;
                         cursor: pointer;
@@ -75,9 +75,7 @@
                         cursor: pointer;
                     }
                 }
-                &.table-filter-td {
-                    position: relative;
-                }
+                
             }
 
             input[type="checkbox"] {

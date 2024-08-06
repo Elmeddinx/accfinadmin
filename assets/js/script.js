@@ -99,6 +99,7 @@ if (document.body.id == "login-page") {
   var modalClose = document.getElementById("modalClose");
   var tableFilterBtn = document.getElementById("tableFilterBtn");
   var tableFilterDropdown = document.getElementById("tableFilterDropdown");
+  var optionsBtn = document.querySelectorAll(".optionsBtn");
 
   hamburger.addEventListener("click", function () {
     sidebar.classList.toggle("show");
@@ -213,5 +214,19 @@ if (meetPlanBtn) {
   });
   modalClose.addEventListener("click", function (e) {
     modal.classList.remove("show");
+  });
+}
+
+if (optionsBtn) {
+  optionsBtn.forEach(function (item) {
+    item.addEventListener("click", function (e) {
+      e.target.nextElementSibling.classList.toggle("show");
+      if (
+        !item.contains(e.target) &&
+        !e.target.nextElementSibling.contains(e.target)
+      ) {
+        e.target.nextElementSibling.classList.remove("show");
+      }
+    });
   });
 }

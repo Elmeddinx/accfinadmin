@@ -14,7 +14,7 @@
                 flex-direction: column;
                 row-gap: 30px;
             }
-            
+
             &-colleft {
                 width: 31%;
                 min-width: 400px;
@@ -33,16 +33,12 @@
                     }
                 }
                 &__col {
+                    text-decoration: none;
                     min-width: 183px;
                     max-width: 230px;
                     border-radius: 12px;
                     background: #fff;
                     padding: 41.5px 30px;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    row-gap: 16px;
                     box-shadow: 0px 1px 3px 0px rgba(96, 108, 128, 0.05);
                     @include mq(tablet-landscape-up) {
                         width: 47.5%;
@@ -53,21 +49,28 @@
                         width: 46.5%;
                         padding: 41.5px 15px;
                     }
-                    img {
-                        width: 52px;
-                        @include mq(phone-only) {
-                            width: 35px;
+                    &-inner {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        row-gap: 16px;
+                        img {
+                            width: 52px;
+                            @include mq(phone-only) {
+                                width: 35px;
+                            }
                         }
-                    }
-                    h4 {
-                        color: #475e88;
-                        font-size: 17px;
-                        font-style: normal;
-                        font-weight: 600;
-                        line-height: 16px;
-                        @include mq(phone-only) {
-                            font-size: 14px;
-                            line-height: 13px;
+                        h4 {
+                            color: #475e88;
+                            font-size: 17px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 16px;
+                            @include mq(phone-only) {
+                                font-size: 14px;
+                                line-height: 13px;
+                            }
                         }
                     }
                 }
