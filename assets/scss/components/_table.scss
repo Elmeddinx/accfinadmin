@@ -10,9 +10,9 @@
             min-width: 1038px;
             border-collapse: collapse;
             thead {
-                &.thead-in-filter {
-                    position: relative !important;
-                }
+                // &.thead-in-filter {
+                //     position: relative !important;
+                // }
                 &:nth-child(1) {
                     th {
                         font-weight: 700;

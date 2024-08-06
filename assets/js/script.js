@@ -239,14 +239,20 @@ document
     dropdown.classList.toggle("show");
 
     // Düğmenin konumunu al
-    const rect = event.target.getBoundingClientRect();
+    const theadInFilter = document.querySelector(".thead-in-filter");
 
-    // Dropdown menüsünün konumunu ayarla
-    dropdown.style.top = 0 + "px";
-    dropdown.style.left = 0 + "px";
+    if (theadInFilter) {
+      const rect = theadInFilter.getBoundingClientRect();
+      const width = rect.width;
+      const top = rect.top;
+      const left = rect.left;
+      console.log(rect);
+      // Dropdown menüsünün konumunu ayarla
+      dropdown.style.width = width + "px";
+      dropdown.style.top = top + "px";
+      dropdown.style.left = left + "px";
+    }
 
     // Olayın sayfadaki diğer tıklama eventlerine yayılmasını önler
     event.stopPropagation();
   });
-
-
