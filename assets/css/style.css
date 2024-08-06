@@ -563,7 +563,7 @@ body {
   border-collapse: collapse;
 }
 .table-container__inner table thead.thead-in-filter {
-  position: relative;
+  position: relative !important;
 }
 .table-container__inner table thead:nth-child(1) th {
   font-weight: 700;
