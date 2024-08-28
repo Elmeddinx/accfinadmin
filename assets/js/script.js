@@ -16,14 +16,23 @@ if (document.body.id == "login-page") {
 
   menuItems.forEach(function (item) {
     item.addEventListener("click", function () {
-      var tabName = this.getAttribute("data-tab");
-      openTab(tabName);
+        var tabName = this.getAttribute("data-tab");
+        openTab(tabName);
+        localStorage.setItem('activeTab', tabName);
     });
-  });
+});
 
-  var firstMenuItem = document.querySelector(".sidebar-menu__item");
-  var defaultTab = firstMenuItem.getAttribute("data-tab");
-  openTab(defaultTab);
+window.addEventListener("load", function () {
+    var activeTab = localStorage.getItem('activeTab');
+    
+    if (activeTab) {
+        openTab(activeTab);
+    } else {
+        var firstMenuItem = document.querySelector(".sidebar-menu__item");
+        var defaultTab = firstMenuItem.getAttribute("data-tab");
+        openTab(defaultTab);
+    }
+});
 
   var submenuItems = document.querySelectorAll(".sidebar-submenu__item");
 
