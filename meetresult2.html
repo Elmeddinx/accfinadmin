@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>ACCFIN - Admin Panel VÖB</title>
 </head>
@@ -175,7 +176,7 @@
                             <div class="table-container">
                                 <div class="table-container__inner">
                                     <table>
-                                        <thead  class="thead-in-filter">
+                                        <thead class="thead-in-filter">
                                             <tr>
                                                 <th><input type="checkbox" id="select-all"></th>
                                                 <th><label for="select-all">Hamsını seç</label></th>
@@ -196,15 +197,17 @@
                                                         <img class="table-cell-inner__chevron"
                                                             src="./assets/icons/chevron2.png" alt="">
                                                     </div>
-                                                   
+
                                                     <div class="table-filter-dropdown" id="tableFilterDropdown">
                                                         <form action="">
                                                             <div class="table-filter">
                                                                 <div class="table-filter__item">
                                                                     <!-- <div class="table-filter__item-header">Filter 1</div> -->
                                                                     <div class="table-filter__item-dropdown">
-                                                                        <div class="table-filter__item-dropdown-result">Filter 1</div>
-                                                                        <div class="table-filter__item-dropdown-content">
+                                                                        <div class="table-filter__item-dropdown-result">
+                                                                            Filter 1</div>
+                                                                        <div
+                                                                            class="table-filter__item-dropdown-content">
                                                                             <label>
                                                                                 Hüquqi adı <input type="checkbox"
                                                                                     checked value="	Hüquqi adı">
@@ -222,8 +225,10 @@
                                                                 <div class="table-filter__item">
                                                                     <!-- <div class="table-filter__item-header">Filter 1</div> -->
                                                                     <div class="table-filter__item-dropdown">
-                                                                        <div class="table-filter__item-dropdown-result">Filter 1</div>
-                                                                        <div class="table-filter__item-dropdown-content">
+                                                                        <div class="table-filter__item-dropdown-result">
+                                                                            Filter 1</div>
+                                                                        <div
+                                                                            class="table-filter__item-dropdown-content">
                                                                             <label>
                                                                                 Hüquqi adı <input type="checkbox"
                                                                                     checked value="	Hüquqi adı">
@@ -241,8 +246,10 @@
                                                                 <div class="table-filter__item">
                                                                     <!-- <div class="table-filter__item-header">Filter 1</div> -->
                                                                     <div class="table-filter__item-dropdown">
-                                                                        <div class="table-filter__item-dropdown-result">Filter 1</div>
-                                                                        <div class="table-filter__item-dropdown-content">
+                                                                        <div class="table-filter__item-dropdown-result">
+                                                                            Filter 1</div>
+                                                                        <div
+                                                                            class="table-filter__item-dropdown-content">
                                                                             <label>
                                                                                 Hüquqi adı <input type="checkbox"
                                                                                     checked value="	Hüquqi adı">
@@ -260,8 +267,10 @@
                                                                 <div class="table-filter__item">
                                                                     <!-- <div class="table-filter__item-header">Filter 1</div> -->
                                                                     <div class="table-filter__item-dropdown">
-                                                                        <div class="table-filter__item-dropdown-result">Filter 1</div>
-                                                                        <div class="table-filter__item-dropdown-content">
+                                                                        <div class="table-filter__item-dropdown-result">
+                                                                            Filter 1</div>
+                                                                        <div
+                                                                            class="table-filter__item-dropdown-content">
                                                                             <label>
                                                                                 Hüquqi adı <input type="checkbox"
                                                                                     checked value="	Hüquqi adı">
@@ -279,8 +288,10 @@
                                                                 <div class="table-filter__item">
                                                                     <!-- <div class="table-filter__item-header">Filter 1</div> -->
                                                                     <div class="table-filter__item-dropdown">
-                                                                        <div class="table-filter__item-dropdown-result">Filter 1</div>
-                                                                        <div class="table-filter__item-dropdown-content">
+                                                                        <div class="table-filter__item-dropdown-result">
+                                                                            Filter 1</div>
+                                                                        <div
+                                                                            class="table-filter__item-dropdown-content">
                                                                             <label>
                                                                                 Hüquqi adı <input type="checkbox"
                                                                                     checked value="	Hüquqi adı">
@@ -554,8 +565,32 @@
                         <div class="modal-form__row modal-form-midline">
                             <div class="modal-form__group">
                                 <div class="modal-form__group-header">Növü</div>
-                                <select name="" id="" class="modal-input">
-                                    <option value="Görüş" selected>Görüş</option>
+                                <select name="" id="" class="modal-input js-example-basic-multiple">
+                                    <option value="Görüş">Görüş</option>
+                                    <option value="Xidmət">Xidmət</option>
+                                    <option value="Xidmət">Xidmət</option>
+                                    <option value="Xidmət">Xidmət</option>
+                                    <option value="Xidmət">Xidmət</option>
+                                    <option value="Xidmət">Xidmət</option>
+                                    <option value="Xidmət">Xidmət</option>
+                                    <option value="Xidmət">Xidmət</option>
+                                    <option value="Xidmət">Xidmət</option>
+                                    <option value="Xidmət">Xidmət</option>
+                                    <option value="Xidmət">Xidmət</option>
+                                    <option value="Xidmət">Xidmət</option>
+                                    <option value="Xidmət">Xidmət</option>
+                                    <option value="Xidmət">Xidmət</option>
+                                    <option value="Xidmət">Xidmət</option>
+                                    <option value="Xidmət">Xidmət</option>
+                                    <option value="Xidmət">Xidmət</option>
+                                    <option value="Xidmət">Xidmət</option>
+                                    <option value="Xidmət">Xidmət</option>
+                                    <option value="Xidmət">Xidmət</option>
+                                    <option value="Xidmət">Xidmət</option>
+                                    <option value="Xidmət">Xidmət</option>
+                                    <option value="Xidmət">Xidmət</option>
+                                    <option value="Xidmət">Xidmət</option>
+                                    <option value="Xidmət">Xidmət</option>
                                     <option value="Xidmət">Xidmət</option>
                                 </select>
                             </div>
@@ -575,7 +610,8 @@
                                         </label>
                                     </div>
                                 </div>
-                                
+
+
                             </div>
                             <div class="modal-form__group modal-form__group-midline">
                                 <div class="modal-form__group-header">Əməliyyat tarixi</div>
@@ -660,9 +696,13 @@
         </div>
     </div>
 
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
+    <script>
+
+    </script>
 </body>
 
 </html>
