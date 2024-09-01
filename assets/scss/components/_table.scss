@@ -2,7 +2,21 @@
     width: 100%;
     margin-top: 50px;
     background-color: #fff;
+    position: relative;
+
+    .scroll-bar {
+        overflow-x: scroll;
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 20px;
+        z-index: 10;
+        background-color: #f1f1f1;
+    }
+
     &__inner {
+        padding-top: 20px;
         width: 100%;
         overflow-x: auto;
         table {
@@ -72,7 +86,6 @@
                         cursor: pointer;
                     }
                 }
-                
             }
 
             input[type="checkbox"] {
