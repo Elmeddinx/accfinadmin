@@ -111,15 +111,15 @@ window.addEventListener("load", function () {
   var optionsBtn = document.querySelectorAll(".optionsBtn");
 
   let isSelect2Open = false;
-
-  $('.js-example-basic-multiple').on('select2:open', function() {
-      isSelect2Open = true;
-  });
-  
-  $('.js-example-basic-multiple').on('select2:close', function() {
-      isSelect2Open = false;
-  });
-
+  if (document.querySelector(".js-example-basic-multiple")) {
+    $('.js-example-basic-multiple').on('select2:open', function() {
+        isSelect2Open = true;
+    });
+    
+    $('.js-example-basic-multiple').on('select2:close', function() {
+        isSelect2Open = false;
+    });
+  }
   hamburger.addEventListener("click", function () {
     sidebar.classList.toggle("show");
   });
