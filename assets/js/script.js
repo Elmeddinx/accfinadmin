@@ -254,23 +254,25 @@ document.addEventListener('DOMContentLoaded', function() {
   var tableWrapper = document.querySelector('.table-container__inner');
   var topScrollBar = document.getElementById('scroll-bar');
   var scrollBarInner = document.getElementById('scroll-bar-inner');
-
-  scrollBarInner.style.width = tableWrapper.scrollWidth + 'px';
-
-  topScrollBar.addEventListener('scroll', function() {
-    tableWrapper.scrollLeft = topScrollBar.scrollLeft;
-  });
-
-  tableWrapper.addEventListener('scroll', function() {
-    topScrollBar.scrollLeft = tableWrapper.scrollLeft;
-  });
+  if (scrollBarInner) {
+    scrollBarInner.style.width = tableWrapper.scrollWidth + 'px';
+      topScrollBar.addEventListener('scroll', function() {
+        tableWrapper.scrollLeft = topScrollBar.scrollLeft;
+      });
+    
+      tableWrapper.addEventListener('scroll', function() {
+        topScrollBar.scrollLeft = tableWrapper.scrollLeft;
+      });
+    }
 });
 
 
 $(document).ready(function () {
-  $(".js-example-basic-multiple").select2({
-    closeOnSelect: true,
-    dropdownParent: $("#modalInner"),
-  });
+    if (document.querySelector(".js-example-basic-multiple")) {
+      $(".js-example-basic-multiple").select2({
+        closeOnSelect: true,
+        dropdownParent: $("#modalInner"),
+      });
+    }
 });
 
